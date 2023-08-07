@@ -1,0 +1,46 @@
+@import url("https://rsms.me/inter/inter.css");
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #121316;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "inter";
+}
+
+h1 {
+    color: #0ed3ff;
+    font-size: 5vw;
+    font-family: 'Antonio';
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.react-logo {
+    animation: rotate360 4s linear infinite;
+    padding: 30px;
+}
+
+.vite {
+    background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
