@@ -1,5 +1,5 @@
 import React from 'react'
-import MyNavbar from '../../../components/MyNavbar'
+import MyNavbar from '../../../components/Navbar/MyNavbar'
 
 const GearBox = () => {
   return (

@@ -1,0 +1,40 @@
+.navbar {
+    padding: 10px 30px !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid #D3D7D9;
+    width: 100%;
+    background: #EBEFF3;
+
+
+    .navlogo-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        cursor: pointer;
+
+        .navlogo {
+            width: 40px;
+            height: 40px;
+        }
+
+        .navlogo-txt {
+            font-family: 'MullerMedium', sans-serif !important;
+            color: var(--text-color-dark1);
+            padding: 0 4px;
+        }
+    }
+
+    #responsive-navbar-nav {
+        justify-content: end;
+    }
+
+}
+
+.active {
+    color: var(--text-color-ink) !important;
+}
+
+.icons {
+    color: var(--text-color-ink) !important;
+    padding: 5px;
+}
