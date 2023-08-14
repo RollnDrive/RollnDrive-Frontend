@@ -1,5 +1,10 @@
-@import url("https://rsms.me/inter/inter.css");
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
 
 * {
     margin: 0;
@@ -7,20 +12,31 @@
     transition: all 0.3s ease-in-out;
 }
 
+:root {
+    --main-bg-color-light: #e6e8e9;
+    --main-bg-color-dark: #1c1d1f;
+    --text-color-ink: #1952d3;
+    --text-color-light1: #fbfdff;
+    --text-color-light2: #767b7f;
+    --text-color-dark1: #1c1d1f;
+    --text-color-dark2: #8d9397;
+    --button-color: #3661ff;
+    --button-hover-color: #2b50da;
+}
+
 body {
     width: 100vw;
     height: 100vh;
-    background: #121316;
+    background: var(--main-bg-color-light) !important;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-family: "inter";
+    font-family: 'Inter', sans-serif !important;
 }
 
 h1 {
-    color: #0ed3ff;
-    font-size: 5vw;
-    font-family: 'Antonio';
+    font-size: 3.5rem !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 @keyframes rotate360 {

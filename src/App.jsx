@@ -1,11 +1,9 @@
-import Unavbar from "./components/Unavbar"
-function App() {
+import MyNavbar from "./components/MyNavbar";
+
+export default function App() {
   return (
     <>
-      <Unavbar/>
-      <h1>hello RollNDrive</h1>
+      <MyNavbar />
     </>
   )
 }
-
-export default App
