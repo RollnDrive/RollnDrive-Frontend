@@ -1,0 +1,116 @@
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    pointer-events: none;
+    padding: 0 10px;
+    font-family: 'Antonio', sans-serif !important;
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        color: var(--text-color-dark1);
+
+        h2 {
+            font-size: 6rem !important;
+            font-weight: 400;
+        }
+
+        p {
+            font-family: 'MullerRegular', sans-serif !important;
+            color: var(--text-color-ink);
+            width: 90%;
+            perspective: 1200px;
+            perspective-origin: -98.3713px 57.2031px;
+            font-size: 20px;
+        }
+
+        a {
+            font-family: 'MullerRegular', sans-serif !important;
+            text-decoration: none;
+            margin-top: 60px;
+            width: 180px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            color: black;
+            border: 1px solid var(--text-color-ink);
+            cursor: pointer;
+            pointer-events: auto;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            transition-timing-function: ease;
+            animation: glowing 2s infinite;
+
+            /* Define the glowing animation */
+            @keyframes glowing {
+
+                0%,
+                100% {
+                    border-color: var(--text-color-ink);
+                    box-shadow: none;
+                }
+
+                50% {
+                    border-color: rgb(18, 72, 187);
+                    /* Change to the desired glow color */
+                    box-shadow: 0 0 10px 1px rgb(179, 252, 255);
+                    /* Adjust the shadow properties */
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .overlay-container {
+        .title {
+            h2 {
+                font-size: 4rem !important;
+            }
+
+            p {
+                font-size: 20px !important;
+            }
+
+            a {
+                width: 80% !important;
+                height: 50px !important;
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay-container {
+        .title {
+            h2 {
+                font-size: 3rem !important;
+            }
+
+            p {
+                font-size: 18px !important;
+            }
+
+            a {
+                width: 80% !important;
+                height: 50px !important;
+                font-size: 16px !important;
+            }
+        }
+    }
+}

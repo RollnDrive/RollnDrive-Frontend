@@ -1,26 +1,27 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import './Home.scss';
 import MyNavbar from '../../components/Navbar/MyNavbar';
-import LocomotiveScroll from 'locomotive-scroll';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from "@react-three/drei";
+import Overlay from './Overlay';
+import ProgressBar from '../../components/ScrollProgress/ProgessBar';
 
 const Home = () => {
-  const scrollContainerRef = useRef(null);
-
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: scrollContainerRef.current,
-      smooth: true,
-    });
-
-    return () => {
-      scroll.destroy();
-    };
-  }, []);
-
   return (
     <>
       <MyNavbar />
-      <div ref={scrollContainerRef} data-scroll-container>
+      <div className="homepage-container">
+        <Canvas className='webgl'>
+          <color attach="background" args={['#fff']} />
+          <OrbitControls />
+          <mesh>
+            <boxGeometry args={[1, 1, 1]} />
+            <meshNormalMaterial color="mediumpurple" />
+          </mesh>
+        </Canvas>
+        <Overlay />
+        <section></section>
+        <ProgressBar/>
       </div>
     </>
   );
