@@ -5,23 +5,25 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from "@react-three/drei";
 import Overlay from './Overlay';
 import ProgressBar from '../../components/ScrollProgress/ProgessBar';
+import MiddleGear from '../../components/MiddleGear/MiddleGear';
 
 const Home = () => {
   return (
     <>
       <MyNavbar />
       <div className="homepage-container">
-        <Canvas className='webgl'>
-          <color attach="background" args={['#fff']} />
-          <OrbitControls />
-          <mesh>
-            <boxGeometry args={[1, 1, 1]} />
-            <meshNormalMaterial color="mediumpurple" />
-          </mesh>
-        </Canvas>
-        <Overlay />
-        <section></section>
-        <ProgressBar/>
+        <div>
+          <Overlay />
+        </div>
+        <div>
+          <Canvas className='webgl'>
+            <color attach="background" args={['#fff']} />
+            <OrbitControls enablePan={false} enableZoom={false} />
+            <MiddleGear />
+            <ambientLight />
+          </Canvas>
+        </div>
+        <ProgressBar />
       </div>
     </>
   );

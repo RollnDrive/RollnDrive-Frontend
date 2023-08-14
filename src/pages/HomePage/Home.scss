@@ -1,4 +1,44 @@
 .homepage-container {
-    width: 100%;
+    width: 100vw;
     height: 100%;
+    display: flex;
+    margin-top: 70px;
+
+    .webgl {
+        width: 40vw !important;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .homepage-container {
+        .webgl {
+            width: 0vw !important;
+        }
+
+        .overlay-container {
+            padding: 10px;
+            padding-top: 100px;
+            width: 100vw;
+            text-align: center;
+
+            .title {
+                text-align: center;
+
+                h2 {
+                    font-size: 4rem !important;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 20px;
+                }
+
+                a {
+                    align-self: center;
+                }
+            }
+        }
+    }
 }
