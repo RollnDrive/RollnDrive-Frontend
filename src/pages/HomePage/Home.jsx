@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.scss';
 import MyNavbar from '../../components/Navbar/MyNavbar';
 import ProgressBar from '../../components/ScrollProgress/ProgessBar';
@@ -12,11 +12,15 @@ import video from "../../assets/video/video.mp4"
 import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
-  let isMobile = false;
+  const [mobile, setMobile] = useState(false);
 
-  if (window.innerWidth < 800) {
-    isMobile = true;
-  }
+  window.addEventListener("resize", ()=>{
+    if (window.innerWidth < 800) {
+      setMobile(true);
+    }
+  })
+
+
 
   return (
     <>
@@ -102,7 +106,7 @@ const Home = () => {
       </div>
 
       {
-        !isMobile ? (
+        !mobile ? (
           <div className='section3'>
             <div className='benefit-title'>
               <h1>Benefits of MDR Conveyors</h1>
