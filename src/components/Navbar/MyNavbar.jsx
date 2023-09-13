@@ -83,7 +83,6 @@ const MyNavbar = () => {
                         <NavDropdown.Item href="/support:specs"><i class="icons fa-solid fa-gears"></i> Get Product Specs</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="/about">About</Nav.Link>
-                    <Nav.Link href="/team">Team</Nav.Link>
                     <Nav.Link href="/contact">Contact</Nav.Link>
                 </Nav>
             </Navbar.Collapse>

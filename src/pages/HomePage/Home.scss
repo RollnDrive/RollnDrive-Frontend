@@ -42,3 +42,129 @@
         }
     }
 }
+
+
+.section2 {
+    width: 100vw;
+    h1 {
+        padding-left: 80px;
+        color: var(--text-color-dark2);
+        padding-bottom: 30px;
+    }
+
+    span {
+        color: var(--text-color-dark1);
+    }
+
+    .items {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .item-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 75%;
+            padding: 20px;
+
+            .row {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 20px;
+
+                .mdr-card {
+                    width: 70%;
+                    background: #fff;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border-radius: 16px;
+
+                    .item-image {
+                        width: 97%;
+                        height: 300px;
+                        background: #eaecee;
+                        margin-top: 0px;
+                        border-radius: 16px;
+
+                        img {
+                            width: 80%;
+                            height: 100%;
+                        }
+                    }
+
+                    button {
+                        background: #1C1D1F;
+                        color: #fff;
+                        border-radius: 50px;
+                        padding: 0.4rem 1rem;
+                        width: 100px;
+                        border: 5px solid white;
+                        position: relative;
+                        bottom: 20px;
+                    }
+                }
+
+                .col {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50%;
+                    height: 100%;
+
+                    .card {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        border-radius: 16px;
+                        width: 90%;
+                        background: #fff;
+                        text-align: center;
+
+                        .item-image {
+                            width: 96%;
+                            height: 300px;
+                            background: #eaecee;
+                            margin-top: 0px;
+                            border-radius: 16px;
+
+                            img {
+                                width: 80%;
+                                height: 90%;
+                            }
+                        }
+
+                        button {
+                            background: #1C1D1F;
+                            color: #fff;
+                            border-radius: 50px;
+                            padding: 0.4rem 1rem;
+                            width: 100px;
+                            border: 5px solid white;
+                            position: relative;
+                            bottom: 20px;
+                        }
+                    }
+                }
+
+                h2 {
+                    padding: 15px 0;
+                    margin: 0;
+                }
+
+            }
+
+            .row>* {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    }
+}
