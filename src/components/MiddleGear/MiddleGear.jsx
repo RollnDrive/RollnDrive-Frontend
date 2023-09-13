@@ -24,7 +24,7 @@ const MiddleGear = () => {
             <primitive
                 ref={GearBox}
                 object={model.scene}
-                scale={3}
+                scale={3.5}
                 rotation={[Math.PI/2, 0, 0]}
                 position={[0, 0.5, 0]}
             />
