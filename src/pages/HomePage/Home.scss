@@ -162,7 +162,9 @@
                             height: 100%;
                         }
                     }
-
+                    .product-info-sm{
+                        padding: 5px 10px;
+                    }
                     button {
                         background: #1C1D1F;
                         color: #fff;
@@ -181,6 +183,10 @@
                     align-items: center;
                     width: 50%;
                     height: 100%;
+                    
+                    .product-info-sm{
+                        padding: 5px 15px;
+                    }
 
                     .card {
                         display: flex;

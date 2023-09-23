@@ -25,7 +25,7 @@ export default function App() {
           <Route path="/support:validate" element={<Validate />} />
           <Route path="/support:specs" element={<GetSpecs />} />
           <Route path="/about" element={<About />} />
-          <Route path="/team" element={<Team />} />
+          <Route path="/teams" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>

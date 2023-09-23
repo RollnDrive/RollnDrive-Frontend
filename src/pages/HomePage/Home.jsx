@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Home.scss';
 import MyNavbar from '../../components/Navbar/MyNavbar';
-import ProgressBar from '../../components/ScrollProgress/ProgessBar';
 import mdr from "../../assets/products/conveyor.png"
 import brushless from "../../assets/products/brushless.png"
 import controller from "../../assets/products/controller.png"
@@ -34,7 +33,6 @@ const Home = () => {
           <h1>WE BUILD RELIABLE & PROMINENT CONVEYOR SOLUTIONS</h1>
           <a href="/teams">OWNERS</a>
         </div>
-        <ProgressBar />
       </div>
 
       <div className='section2'>
@@ -47,7 +45,7 @@ const Home = () => {
             <div className="row">
               <div className="mdr-card">
                 <h2>Motor Driven Roller</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis! Vel laborum error architecto delectus sapiente impedit.</p>
+                <p class="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
                 <div className="item-image">
                   <img src={mdr} alt="item" />
                 </div>
@@ -59,7 +57,7 @@ const Home = () => {
               <div className="col">
                 <div className="card">
                   <h2>Brushless Motor</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta expedita ducimus minus autem aliquam provident suscipit repellendus ipsa qui culpa!</p>
+                  <p class="product-info-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta expedita ducimus minus aut!</p>
                   <div className="item-image">
                     <img src={brushless} alt="item" />
                   </div>
@@ -70,7 +68,7 @@ const Home = () => {
               <div className="col">
                 <div className="card">
                   <h2>Geared Motors</h2>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis! Vel laborum error architecto delectus sapiente impedit.</p>
+                  <p class="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
                   <div className="item-image">
                     <img src={geared} alt="item" />
                   </div>
@@ -83,7 +81,7 @@ const Home = () => {
               <div className="col">
                 <div className="card">
                   <h2>Gearboxes</h2>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis! Vel laborum error architecto delectus sapiente impedit.</p>
+                  <p class="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
                   <div className="item-image">
                     <img src={gearbox} alt="item" />
                   </div>
@@ -93,7 +91,7 @@ const Home = () => {
               <div className="col">
                 <div className="card">
                   <h2>Motor Controller</h2>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis! Vel laborum error architecto delectus sapiente impedit.</p>
+                  <p class="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
                   <div className="item-image">
                     <img src={controller} alt="item" />
                   </div>
