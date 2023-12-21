@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Home.scss';
 import MyNavbar from '../../components/Navbar/MyNavbar';
 import mdr from "../../assets/products/conveyor.png"
@@ -45,7 +45,7 @@ const Home = () => {
             <div className="row">
               <div className="mdr-card">
                 <h2>Motor Driven Roller</h2>
-                <p class="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
+                <p className="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
                 <div className="item-image">
                   <img src={mdr} alt="item" />
                 </div>
@@ -57,7 +57,7 @@ const Home = () => {
               <div className="col">
                 <div className="card">
                   <h2>Brushless Motor</h2>
-                  <p class="product-info-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta expedita ducimus minus aut!</p>
+                  <p className="product-info-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta expedita ducimus minus aut!</p>
                   <div className="item-image">
                     <img src={brushless} alt="item" />
                   </div>
@@ -68,7 +68,7 @@ const Home = () => {
               <div className="col">
                 <div className="card">
                   <h2>Geared Motors</h2>
-                  <p class="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
+                  <p className="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
                   <div className="item-image">
                     <img src={geared} alt="item" />
                   </div>
@@ -81,7 +81,7 @@ const Home = () => {
               <div className="col">
                 <div className="card">
                   <h2>Gearboxes</h2>
-                  <p class="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
+                  <p className="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
                   <div className="item-image">
                     <img src={gearbox} alt="item" />
                   </div>
@@ -91,7 +91,7 @@ const Home = () => {
               <div className="col">
                 <div className="card">
                   <h2>Motor Controller</h2>
-                  <p class="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
+                  <p className="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
                   <div className="item-image">
                     <img src={controller} alt="item" />
                   </div>
