@@ -1,4 +1,3 @@
-import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import './MyNavbar.scss';
 import motor from "../../assets/products/motor.webp"
@@ -10,29 +9,30 @@ import { useLocation } from "react-router-dom";
 const MyNavbar = () => {
     const [show1, setShow1] = useState(false);
     const [show2, setShow2] = useState(false);
-    const showDropdown1 = (e) => {
+    const showDropdown1 = () => {
         setShow1(!show1);
     }
-    const hideDropdown1 = e => {
+    const hideDropdown1 = () => {
         setShow1(false);
     }
-    const showDropdown2 = (e) => {
+    const showDropdown2 = () => {
         setShow2(!show2);
     }
-    const hideDropdown2 = e => {
+    const hideDropdown2 = () => {
         setShow2(false);
     }
     const location = useLocation();
     const [activeKey, setActiveKey] = useState("");
     useEffect(() => {
         setActiveKey(location.pathname);
-    }, [])
+    }, [location]);
+
     return (
         <Navbar bg="light" expand="lg" className="navbar d-flex justify-content-between fixed-top">
             <Navbar.Brand href="#home">
                 <div className="navlogo-container">
                     <img className='navlogo' src="./navlogo.png" alt='logo' />
-                    <span className='navlogo-txt'>ROLLnDRIVE</span>
+                    <span className='navlogo-txt'>RollnDrive</span>
                 </div>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -78,9 +78,9 @@ const MyNavbar = () => {
                         onMouseEnter={showDropdown2}
                         onMouseLeave={hideDropdown2}
                     >
-                        <NavDropdown.Item href="/support:validate"><i class="icons fa-regular fa-square-check"></i> Validate Your Product</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="/support:specs"><i class="icons fa-solid fa-gears"></i> Get Product Specs</NavDropdown.Item>
+                        <NavDropdown.Item href="/support:validate"><i className="icons fa-regular fa-square-check"></i> Validate Your Product</NavDropdown.Item>
+                        {/* <NavDropdown.Divider /> */}
+                        {/* <NavDropdown.Item href="/support:specs"><i className="icons fa-solid fa-gears"></i> Get Product Specs</NavDropdown.Item> */}
                     </NavDropdown>
                     <Nav.Link href="/about">About</Nav.Link>
                     <Nav.Link href="/contact">Contact</Nav.Link>
