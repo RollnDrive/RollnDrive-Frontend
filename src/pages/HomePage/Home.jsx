@@ -13,7 +13,7 @@ import Footer from '../../components/Footer/Footer';
 const Home = () => {
   const [mobile, setMobile] = useState(false);
 
-  window.addEventListener("resize", ()=>{
+  window.addEventListener("resize", () => {
     if (window.innerWidth < 800) {
       setMobile(true);
     }
@@ -107,27 +107,32 @@ const Home = () => {
         !mobile ? (
           <div className='section3'>
             <div className='benefit-title'>
-              <h1>Benefits of MDR Conveyors</h1>
-              <p>Featuring the latest and most advanced <br /> innovations in the conveyor industry</p>
+              <h1>Why to opt for RollnDrive?</h1>
+              <p>Discover the Power of Innovation in <br /> Material Handling and Motion Control</p>
             </div>
 
 
             <div className="benefits-container">
               <div className="left">
                 <div className="benefit-card" id='card-energy'>
-                  <h3>Energy Efficiency</h3>
-                  <p>Roll and drive conveyor systems are known for their energy efficiency. These systems use motorized rollers strategically placed along the conveyor's length, which are activated only when needed. This on-demand operation helps reduce energy consumption, making them more environmentally friendly and cost-effective in the long run.</p>
+                  <h3>Motor Driven Rollers (MDR)</h3>
+                  <p>Effortless Precision: MDR technology ensures seamless and precise material handling, optimizing your production flow.
+                    Energy Efficiency: Experience significant energy savings with our MDRs, contributing to a greener and more sustainable operation.
+                    Low Maintenance: Robust construction and intelligent design minimize downtime, reducing maintenance costs over the long term.
+                  </p>
                 </div>
               </div>
               <div className="right">
                 <div className="row">
                   <div className="benefit-card" id='card-maintenance'>
-                    <h3>Less maintenance</h3>
-                    <p>Roll and drive conveyors minimize energy consumption, reducing operational costs.</p>
+                    <h3>Brushless Motors</h3>
+                    <p>High performance, longevity, reduced noise & vibration: Our brushless motors deliver superior, maintenance-free operation, ensuring a quiet and smooth workplace experience.
+                    </p>
                   </div>
                   <div className="benefit-card" id='card-performance'>
-                    <h3>High performance</h3>
-                    <p>The conveyors offer consistent and reliable performance, improving productivity.</p>
+                    <h3>Brushless Geared Motors
+                    </h3>
+                    <p>Compact Design, Powerful Output: Benefit from the combination of brushless technology and precision gearing, providing a compact yet powerful solution for your applications.</p>
                   </div>
                 </div>
 
@@ -137,8 +142,10 @@ const Home = () => {
                     <p>They enhance workplace safety by reducing the risk of accidents and injuries.</p>
                   </div>
                   <div className="benefit-card" id='card-sound'>
-                    <h3>Low sound</h3>
-                    <p>Roll and drive conveyors operate quietly, creating a more comfortable work environment.</p>
+                    <h3>Customizable Gearboxes
+                    </h3>
+                    <p>Our range of gearboxes can be customized to meet the most intricate specifications, including Dual Shaft Gearboxes, Planetary with Spur, Transaxle, and Swerve Drive options.
+                    </p>
                   </div>
                 </div>
 
@@ -161,8 +168,8 @@ const Home = () => {
           <>
             <div className='section3-mobile'>
               <div className='benefit-title-mobile'>
-                <h1>Benefits of MDR Conveyors</h1>
-                <p>Featuring the latest and most advanced <br /> innovations in the conveyor industry</p>
+                <h1>Why to opt for RollnDrive?</h1>
+                <p>Discover the Power of Innovation in <br /> Material Handling and Motion Control</p>
               </div>
               <div className="benefits-container-mobile">
                 <div className="benefit-card-mobile" id='card-energy'>
