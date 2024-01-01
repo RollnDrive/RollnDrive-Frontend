@@ -26,11 +26,19 @@ const ProductTypes = ({ productTypes }) => {
             </div>
 
             <div className="product-type">
-                <h2>{productTypes[selectedProductIndex].name}</h2>
+                <h2 style={{
+                    color: "var(--text-color-ink)", fontSize: "25px",
+                    "marginBottom": "12px"
+                }}>{productTypes[selectedProductIndex].name}</h2>
                 <p>{productTypes[selectedProductIndex].description}</p>
 
                 <div className="key-features">
-                    <h3>Key Features:</h3>
+                    <h3 style={{
+                        color: "var(--text-color-ink)", fontSize: "25px",
+                        "marginBottom": "12px"
+                    }}>
+                        Key Features:
+                    </h3>
                     <ul>
                         {Object.entries(
                             productTypes[selectedProductIndex].KeyFeatures
@@ -43,7 +51,10 @@ const ProductTypes = ({ productTypes }) => {
                 </div>
 
                 <div className="technical-details">
-                    <h3>Technical Details:</h3>
+                    <h3 style={{
+                        color: "var(--text-color-ink)", fontSize: "25px",
+                        "marginBottom": "12px"
+                    }}>Technical Details:</h3>
                     <table>
                         <tbody>
                             {Object.entries(

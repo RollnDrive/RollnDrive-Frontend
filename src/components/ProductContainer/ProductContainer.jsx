@@ -3,8 +3,20 @@
 import "./ProductContainer.scss";
 import mdrImage from "../../assets/products/MDR_hero.png"
 import ProductTypes from "../ProductTypes/ProductTypes";
+import partTable from "../../assets/products/MDR_Part-Number.png"
+import { useState } from "react";
 
 const ProductContainer = ({ productData, productTypes }) => {
+    const [visibleApplication, setVisibleApplication] = useState(false);
+    const [visiblePartTable, setVisiblePartTable] = useState(false);
+
+    const handleClickApplication = () => {
+        setVisibleApplication(!visibleApplication);
+    }
+    const handleClickPartTable = () => {
+        setVisiblePartTable(!visiblePartTable);
+    }
+
     const product = productData[0];
 
     return (
@@ -27,12 +39,6 @@ const ProductContainer = ({ productData, productTypes }) => {
                 </div>
             </div>
 
-            <div style={{
-                marginTop: "30px"
-            }} className="product-types">
-                <ProductTypes productTypes={productTypes} />
-            </div>
-
             <div className="product-features">
                 <h3>Features:</h3>
                 <ul>
@@ -43,13 +49,29 @@ const ProductContainer = ({ productData, productTypes }) => {
                     ))}
                 </ul>
             </div>
+
+            <div style={{
+                marginTop: "30px"
+            }} className="product-types">
+                <ProductTypes productTypes={productTypes} />
+            </div>
+
             <div className="product-applications">
-                <h3>Applications:</h3>
-                <ul>
-                    {product.Applications.map((application, index) => (
-                        <li key={index}>{application}</li>
-                    ))}
-                </ul>
+                <h3>Applications: <i onClick={handleClickApplication} style={{ cursor: "pointer" }} className="fa-solid fa-circle-chevron-down"></i></h3>
+                {visibleApplication &&
+                    <ul>
+                        {product.Applications.map((application, index) => (
+                            <li key={index}>{application}</li>
+                        ))}
+                    </ul>
+                }
+            </div>
+
+            <div className="part-no-image">
+                <h3>Part Number Table: <i onClick={handleClickPartTable} style={{ cursor: "pointer" }} className="fa-solid fa-circle-chevron-down"></i></h3>
+                {
+                    visiblePartTable && <img width={"100%"} height={"100%"} src={partTable} alt="part-no" />
+                }
             </div>
         </div>
     );

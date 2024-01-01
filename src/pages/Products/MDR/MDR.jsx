@@ -2,7 +2,6 @@ import Footer from '../../../components/Footer/Footer';
 import MyNavbar from '../../../components/Navbar/MyNavbar'
 import ProductContainer from '../../../components/ProductContainer/ProductContainer';
 import MDR_data from './Data';
-import "./MDR.scss"
 import MDR_types from './Types';
 
 const MDR = () => {

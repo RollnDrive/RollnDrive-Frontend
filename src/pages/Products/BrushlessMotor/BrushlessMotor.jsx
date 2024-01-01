@@ -1,11 +1,13 @@
-import React from 'react'
+import Footer from '../../../components/Footer/Footer'
 import MyNavbar from '../../../components/Navbar/MyNavbar'
+import ProductContainer from '../../../components/ProductContainer/ProductContainer'
 
 const BrushlessMotor = () => {
   return (
     <div>
-      <MyNavbar/>
-      <h1>BrushlessMotor</h1>
+      <MyNavbar />
+      <ProductContainer />
+      <Footer />
     </div>
   )
 }
