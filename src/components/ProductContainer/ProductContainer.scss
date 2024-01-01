@@ -104,7 +104,8 @@
             column-count: 3;
             margin-top: 30px;
         }
-        h3{
+
+        h3 {
             margin: 0;
         }
     }
@@ -128,7 +129,7 @@
 @media (max-width: 768px) {
     .product-container {
         margin: 100px 20px;
-
+        margin-bottom: 0;
         .product-top {
             display: flex;
             flex-direction: column;
@@ -209,6 +210,13 @@
                         font-weight: bold;
                     }
                 }
+            }
+        }
+
+
+        .product-applications {
+            ul {
+                column-count: 2;
             }
         }
     }
