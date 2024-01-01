@@ -14,7 +14,7 @@
 
         img {
             width: 100%;
-            height: auto;
+            height: fit-content;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -61,6 +61,23 @@
                 strong {
                     font-weight: bold;
                 }
+            }
+        }
+    }
+
+    .req-drawings-btn {
+        button {
+            padding: 8px 15px;
+            margin-top: 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            background: #3882f9;
+            border: none;
+            color: #fff;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: #3477e4;
             }
         }
     }
@@ -130,6 +147,7 @@
     .product-container {
         margin: 100px 20px;
         margin-bottom: 0;
+
         .product-top {
             display: flex;
             flex-direction: column;

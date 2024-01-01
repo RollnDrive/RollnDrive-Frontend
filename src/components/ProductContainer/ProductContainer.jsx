@@ -36,6 +36,9 @@ const ProductContainer = ({ productData, productTypes }) => {
                             ))}
                         </ul>
                     </div>
+                    <div className="req-drawings-btn">
+                        <button>Request Drawings</button>
+                    </div>
                 </div>
             </div>
 

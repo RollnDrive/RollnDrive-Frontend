@@ -1,6 +1,7 @@
 import './Footer.scss'
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <div>
       <div className="communicate">
@@ -25,7 +26,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer">
-        <p>All Rights Reserved © 2023 RollNDrive</p>
+        <p>All Rights Reserved © | {year} RollNDrive</p>
 
         <div className="policies">
           <h6>Refund Policy</h6>
