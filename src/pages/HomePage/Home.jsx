@@ -6,7 +6,7 @@ import brushless from "../../assets/products/brushless.png"
 import controller from "../../assets/products/controller.png"
 import gearbox from "../../assets/products/gearbox.png"
 import geared from "../../assets/products/geared.png"
-
+import { Link } from 'react-router-dom';
 import video from "../../assets/video/video.mp4"
 import Footer from '../../components/Footer/Footer';
 
@@ -49,7 +49,7 @@ const Home = () => {
                 <div className="item-image">
                   <img src={mdr} alt="item" />
                 </div>
-                <button>Info</button>
+                <Link to={"/products:mdr"}><button>Info</button></Link>
               </div>
             </div>
 
@@ -174,7 +174,7 @@ const Home = () => {
               <div className="benefits-container-mobile">
                 <div className="benefit-card-mobile" id='card-energy'>
                   <h3>Energy Efficiency</h3>
-                  <p>Roll and drive conveyor systems are known for their energy efficiency. These systems use motorized rollers strategically placed along the conveyor's length, which are activated only when needed. This on-demand operation helps reduce energy consumption, making them more environmentally friendly and cost-effective in the long run.</p>
+                  <p>{`Roll and drive conveyor systems are known for their energy efficiency. These systems use motorized rollers strategically placed along the conveyor's length, which are activated only when needed. This on-demand operation helps reduce energy consumption, making them more environmentally friendly and cost-effective in the long run.`}</p>
                 </div>
                 <div className="benefit-card-mobile" id='card-maintenance'>
                   <h3>Less maintenance</h3>
@@ -212,8 +212,6 @@ const Home = () => {
           </>
         )
       }
-
-
 
       <Footer />
     </>

@@ -60,6 +60,46 @@ const MDR_types = [
             }
         ]
     },
+    {
+        name: '50 mm MDR',
+        description: `Introducing our state-of-the-art Motor Driven Roller (MDR), a cutting-edge solution designed to revolutionize your material handling processes. Engineered for efficiency and reliability, our MDR boasts a 50mm diameter, offering a powerful and compact solution for a variety of applications.
+        `,
+        KeyFeatures: {
+            "Dynamic 50mm Diameter": `The heart of our MDR lies in its compact yet powerful 50mm diameter, providing the perfect balance of strength and versatility. Navigate through your material handling tasks with ease and efficiency.
+            `,
+            " Impressive Speed Range": `Experience unmatched adaptability with a speed range of 10-160 meters per minute. From meticulous handling at lower speeds to swift movement in high-intensity operations, our MDR ensures you're always in control.`,
+            "Wide Range of Torque": "Tailor your material handling precisely to your needs with a torque range of 0.6-9.6 Nm. This customizable torque capability ensures optimal performance across a spectrum of applications, enhancing efficiency and reducing energy consumption.",
+            "Width (300-600 mm)": "Tailor the MDR to your specific requirements with the available width range of 300-600 mm, providing flexibility for a variety of material handling applications.",
+            "Drive Options": "The 50mm MDR comes with four different drive options to suit your specific conveyor needs: 1) Poly V groove, 2)Crowned - For Belt conveyor, 3) V-Groove, 4) Sprocket",
+            "Robust and Reliable": `Crafted from top-tier materials, our MDR is built to withstand the demands of industrial environments. Its robust construction guarantees durability, minimizing downtime and ensuring a reliable solution for your material handling challenges`,
+            "Compact and Easy Integration": `Our MDR's compact design allows for effortless integration into your existing systems. Upgrade your material handling capabilities without sacrificing valuable space, and enjoy the benefits of a high-performance solution tailored to your needs`,
+            "User-Friendly Maintenance": `Minimize disruptions to your workflow with our MDR's user-friendly maintenance features. Keep your operations running smoothly with hassle-free installation and routine maintenance that is designed for efficiency`
+        },
+        technicalDetails: [
+            {
+                table: {
+                    Diameter: "50mm",
+                    Power: "60 W",
+                    Type: "BLDC-IR",
+                    "Operating Voltage (VDC)": "24/48",
+                    "Rated Torque": [
+                        "0.6 NM",
+                        "1.35 NM",
+                        "2.4 NM",
+                        "4.05 NM",
+                        "9.6 NM"
+                    ],
+                    "Speed": [
+                        "1000 rpm",
+                        "444 rpm",
+                        "250 rpm",
+                        "148 rpm",
+                        "63 rpm"
+                    ]
+                }
+            }
+        ]
+    },
 ]
 
 export default MDR_types;
