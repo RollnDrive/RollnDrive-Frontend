@@ -5,10 +5,139 @@ import mdrImage from "../../assets/products/MDR_hero.png"
 import ProductTypes from "../ProductTypes/ProductTypes";
 import partTable from "../../assets/products/MDR_Part-Number.png"
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+
+const RequestDrawingsForm = ({ handleCloseRequestForm }) => {
+    const [formData, setFormData] = useState({
+        SENDER_NAME: "",
+        COMPANY_NAME: "",
+        EMAIL: "",
+        CONTACT_NO: "",
+        PART_NO: "",
+        NOTE: "",
+    });
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        // Make API call here using formData
+        fetch("https://download-specs-backend-api.vercel.app/download-images", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+        })
+            .then(response => response.json())
+            .then(data => {
+                toast.success(`${data.message}`, {
+                    position: "top-center",
+                    autoClose: 8000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    progress: undefined,
+                    theme: "light",
+                });
+                handleCloseRequestForm();
+            })
+            .catch(error => {
+                toast.error(`${error.message}`, {
+                    position: "top-center",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    progress: undefined,
+                    theme: "light",
+                });
+            });
+    };
+
+    return (
+        <div className="form-modal">
+            <form onSubmit={handleSubmit}>
+                <h4 style={{
+                    textAlign: "center",
+                    marginBottom: 30
+                }}>Request for Part Diagram</h4>
+                <label htmlFor="SENDER_NAME">Sender Name: <span style={{ color: "red", fontWeight: "bold" }}> *</span></label>
+                <input
+                    type="text"
+                    id="SENDER_NAME"
+                    name="SENDER_NAME"
+                    value={formData.SENDER_NAME}
+                    onChange={handleInputChange}
+                    placeholder="Enter your name"
+                    required
+                />
+
+                <label htmlFor="COMPANY_NAME">Company Name: <span style={{ color: "red", fontWeight: "bold" }}> *</span></label>
+                <input
+                    type="text"
+                    id="COMPANY_NAME"
+                    name="COMPANY_NAME"
+                    value={formData.COMPANY_NAME}
+                    onChange={handleInputChange}
+                    placeholder="Enter your company name"
+                    required
+                />
+
+                <label htmlFor="EMAIL">Email: <span style={{ color: "red", fontWeight: "bold" }}> *</span></label>
+                <input
+                    type="email"
+                    id="EMAIL"
+                    name="EMAIL"
+                    value={formData.EMAIL}
+                    onChange={handleInputChange}
+                    placeholder="Enter your Email address"
+                    required
+                />
+
+                <label htmlFor="CONTACT_NO">Contact Number:</label>
+                <input
+                    type="text"
+                    id="CONTACT_NO"
+                    name="CONTACT_NO"
+                    value={formData.CONTACT_NO}
+                    onChange={handleInputChange}
+                    placeholder="Enter your contact number"
+                />
+
+                <label htmlFor="PART_NO">Part Number: <span style={{ color: "red", fontWeight: "bold" }}> *</span></label>
+                <input
+                    type="text"
+                    id="PART_NO"
+                    name="PART_NO"
+                    value={formData.PART_NO}
+                    onChange={handleInputChange}
+                    placeholder="Enter part number to request"
+                    required
+                />
+
+                <label htmlFor="NOTE">Note:</label>
+                <input
+                    id="NOTE"
+                    name="NOTE"
+                    value={formData.NOTE}
+                    onChange={handleInputChange}
+                    placeholder="Any feedback or note?"
+                />
+
+                <button type="submit">Submit</button>
+                <button type="button" onClick={handleCloseRequestForm}>Cancel</button>
+            </form>
+        </div>
+    );
+};
 
 const ProductContainer = ({ productData, productTypes }) => {
     const [visibleApplication, setVisibleApplication] = useState(false);
     const [visiblePartTable, setVisiblePartTable] = useState(false);
+    const [showRequestForm, setShowRequestForm] = useState(false);
 
     const handleClickApplication = () => {
         setVisibleApplication(!visibleApplication);
@@ -17,6 +146,13 @@ const ProductContainer = ({ productData, productTypes }) => {
         setVisiblePartTable(!visiblePartTable);
     }
 
+    const handleRequestDrawingsClick = () => {
+        setShowRequestForm(true);
+    }
+
+    const handleCloseRequestForm = () => {
+        setShowRequestForm(false);
+    }
     const product = productData[0];
 
     return (
@@ -37,8 +173,16 @@ const ProductContainer = ({ productData, productTypes }) => {
                         </ul>
                     </div>
                     <div className="req-drawings-btn">
-                        <button>Request Drawings</button>
+                        <button onClick={handleRequestDrawingsClick}>Request Drawings</button>
                     </div>
+
+                    {/* Render the form modal if showRequestForm is true */}
+                    {showRequestForm && (
+                        <RequestDrawingsForm
+                            handleCloseRequestForm={handleCloseRequestForm}
+                            product={product}
+                        />
+                    )}
                 </div>
             </div>
 
@@ -76,6 +220,17 @@ const ProductContainer = ({ productData, productTypes }) => {
                     visiblePartTable && <img width={"100%"} height={"100%"} src={partTable} alt="part-no" />
                 }
             </div>
+
+            <ToastContainer
+                position="top-center"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss={false}
+                theme="light"
+            />
         </div>
     );
 };
