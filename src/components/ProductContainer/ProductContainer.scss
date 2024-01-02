@@ -60,6 +60,12 @@
                         background-color: #545b62;
                     }
                 }
+
+                &:disabled {
+                    background-color: #cccccc;
+                    color: #666666;
+                    cursor: not-allowed;
+                }
             }
         }
     }

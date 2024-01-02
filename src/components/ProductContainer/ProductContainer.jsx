@@ -16,6 +16,7 @@ const RequestDrawingsForm = ({ handleCloseRequestForm }) => {
         PART_NO: "",
         NOTE: "",
     });
+    const [loading, setLoading] = useState(false);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -24,6 +25,7 @@ const RequestDrawingsForm = ({ handleCloseRequestForm }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setLoading(true);
 
         // Make API call here using formData
         fetch("https://download-specs-backend-api.vercel.app/download-images", {
@@ -36,24 +38,17 @@ const RequestDrawingsForm = ({ handleCloseRequestForm }) => {
             .then(response => response.json())
             .then(data => {
                 toast.success(`${data.message}`, {
-                    position: "top-center",
-                    autoClose: 8000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    progress: undefined,
-                    theme: "light",
+                    // ... (toast settings)
                 });
                 handleCloseRequestForm();
             })
             .catch(error => {
                 toast.error(`${error.message}`, {
-                    position: "top-center",
-                    autoClose: 3000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    progress: undefined,
-                    theme: "light",
+                    // ... (toast settings)
                 });
+            })
+            .finally(() => {
+                setLoading(false); // Set loading state to false when the API call is complete.
             });
     };
 
@@ -127,8 +122,12 @@ const RequestDrawingsForm = ({ handleCloseRequestForm }) => {
                     placeholder="Any feedback or note?"
                 />
 
-                <button type="submit">Submit</button>
-                <button type="button" onClick={handleCloseRequestForm}>Cancel</button>
+                <button type="submit" disabled={loading}>
+                    {loading ? "Submitting..." : "Submit"}
+                </button>
+                <button type="button" onClick={handleCloseRequestForm} disabled={loading}>
+                    Cancel
+                </button>
             </form>
         </div>
     );
