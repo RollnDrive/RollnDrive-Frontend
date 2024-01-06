@@ -1,4 +1,3 @@
-import React from 'react'
 import MyNavbar from '../../components/Navbar/MyNavbar'
 import Footer from '../../components/Footer/Footer'
 import './Team.scss'

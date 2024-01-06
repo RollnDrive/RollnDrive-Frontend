@@ -1,33 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap');
-.team-section{
+
+.team-section {
     background: transparent;
     flex-direction: column;
-    margin-top: 30px;
+    padding: 100px 0px;
     background: var(--main-bg-color-dark);
     color: white;
-    .team-title{
+    box-sizing: border-box;
+
+    .team-title {
         font-family: 'Inter';
         font-weight: 600;
         font-size: 100px;
         color: rgba(191, 191, 191, 0.61);
+        text-align: center;
     }
-    .members{
+
+    .members {
         display: flex;
         flex-direction: row;
         width: 100vw;
         justify-content: space-evenly;
     }
-    .team-intro{
-        width: 50%;
+
+    .team-intro {
+        width: 100%;
         text-align: center;
         margin-bottom: 50px;
         font-size: 20px;
         line-height: 30px;
-        .quote{
+        text-align: center;
+
+        .quote {
             font-size: 30px;
             font-weight: 700;
             line-height: 10px;
             font-family: 'BIZ UDPGothic', sans-serif;
+            text-align: center;
+            width: 50%;
         }
     }
 }
