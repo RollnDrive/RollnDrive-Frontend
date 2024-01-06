@@ -1,32 +1,35 @@
-const MDR_data = [
+const BLessMotors_data = [
     {
         image: "../../assets/products/MDR_hero.png",
-        title: 'Motor Driven Roller',
-        description: `A Motor Driven Roller ( MDR ) is a type of conveyor roller that incorporates an integrated brushless dc motor within the roller body. This design eliminates the need for a separate external drive unit , making it a compact and efficient solution for various material handling and conveyor system applications . Motor driven rollers are commonly used in industries such as manufacturing, distribution and logistics`,
-        types: ['MDR 50mm', 'MDR 76mm', 'MDR 80mm'],
+        title: 'Brush Less Motor',
+        description: `Discover the future of electric motors with Brushless DC (BLDC) technology. These innovative motors are revolutionizing various industries, offering improved efficiency, reliability, and performance compared to traditional brushed motors. Let's dive into the key features and benefits that make brushless DC motors a game-changer.
+        `,
+        types: ['IRS42', 'IRR42', 'IRR57', 'IRR80'],
         Features: [
             {
-                "Built-in Motor": "The motor is tucked away inside the roller itself, making the whole system more compact and simpler. This is unlike traditional conveyor systems that have a separate motor somewhere else.",
-                "Runs Quietly": "As the MDR uses a brush-less motor design,  the noise source is eliminated because there is no physical contact between components. The absence of commutator noise contributes to a quieter operation.",
-                "Modular and Flexible": "MDR are designed to be modular and easy to install. This modularity allows for flexibility in conveyor system design and layout. It also simplifies maintenance and replacement, as individual motorized rollers can be swapped out without affecting the entire system.",
-                "Energy Efficiency with Precision Control": " The use of a brushless DC motor contributes to the energy efficiency of motor drive rollers. These motors can be controlled with precision, optimizing power consumption based on specific load and speed requirements."
+                "Brushless Design": "Unlike brushed motors, BLDC motors operate without brushes and commutators. This eliminates friction and wear, resulting in a longer lifespan and lower maintenance requirements. The absence of physical contacts also reduces the risk of sparking, making them ideal for applications where sparks could pose a hazard.",
+                "Enhanced Efficiency": `Brushless DC motors boast higher efficiency levels due to their optimized design. The absence of brushes reduces energy loss through friction and heat, leading to improved overall performance. This efficiency makes BLDC motors a preferred choice for applications demanding energy conservation and reduced operating costs.
+                `,
+                "Precise Speed Control": `BLDC motors offer precise speed control and smooth operation, making them suitable for applications requiring accurate and responsive performance. This makes them particularly valuable in industries such as robotics, drones, and electric vehicles, where precise control is crucial.
+                `,
+                "Reliability and Durability": `With fewer moving parts and no brushes to wear out, brushless DC motors are inherently more reliable and durable. This reliability makes them well-suited for critical applications in industries like medical equipment, aerospace, and industrial automation.`,
+                "Compact and Lightweight": `The compact and lightweight nature of brushless DC motors makes them an excellent choice for applications where space and weight constraints are significant factors. This attribute is particularly advantageous in the design of portable devices, drones, and electric vehicles.
+                `
             }
         ],
         Applications: [
-            "Conveyor Systems",
-            "Warehousing and Distribution",
-            "Assembly Lines",
-            "Packaging Systems",
-            "Automated Material Handling",
-            "Airport Baggage Handling",
-            "Food and Beverage Processing",
-            "E-commerce Fulfillment Centers",
-            "Automotive Manufacturing",
-            "Retail Distribution Centers",
-            "Textile and Apparel Industry",
-            "Pharmaceutical Production"
+            "Industrial Automation",
+            "Electric Vehicles (EVs)",
+            "Aerospace",
+            "Medical Equipment",
+            "Consumer Electronics",
+            "Renewable Energy",
+            "Robotics",
+            "HVAC Systems",
+            "Unmanned Aerial Vehicles (UAVs)",
+            "Automotive Systems",
         ]
     }
 ];
 
-export default MDR_data;
+export default BLessMotors_data;

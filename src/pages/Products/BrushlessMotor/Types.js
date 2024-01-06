@@ -1,105 +1,123 @@
-const MDR_types = [
+const BlessMotor_types = [
     {
-        name: '80 mm MDR',
-        description: "Introducing our specialized Motor Driven Roller (MDR) with an 80mm diameter, tailored for optimal performance in belt conveyor applications. With a dynamic speed range of 16-251 meters per minute, torque ranging from 1.2-19.2 Nm, and available in widths from 300mm to 1000mm, this MDR version is crafted for seamless integration into belt drive systems.",
+        name: 'IRS42',
+        description: "Square Cross-Section BLDC Motor, a compact and efficient solution designed for a range of applications. With a power output ranging from 32 to 105 Watts, this motor offers a perfect balance of performance and energy efficiency. Operating at a consistent 4000 RPM, it ensures a smooth and reliable performance across various tasks. One standout feature of our BLDC Motor is its square cross-sectional design, optimizing space utilization while providing robust and stable performance. The inclusion of inbuilt hall sensors enhances precision and control, allowing for seamless integration into applications that demand accurate speed and position sensing. Whether you're looking for a reliable motor for your robotics project, automation system, or any other application, our Square Cross-Section BLDC Motor delivers the power, efficiency, and precision you need. Experience a new level of performance with our cutting-edge motor technology.",
         KeyFeatures: {
-            "Specialized 80mm Diameter": "Engineered with precision, the 80mm diameter of our MDR is optimized for belt conveyor applications, ensuring efficient and controlled material handling.",
-            "Dynamic Speed Range": "Adapt to the unique demands of belt-driven systems with a speed range of 16-251 meters per minute. This range allows for smooth and reliable operation across various conveyor applications.",
-            "Width (300-1000mm)": "Customize the MDR to your specific conveyor requirements with a flexible width range of 300-1000mm, offering adaptability for different material handling scenarios.",
-            "Drive Options - Crowned for Belt Conveyor": "Tailored specifically for belt drive systems, our MDR with crowned rollers ensures optimal traction and alignment, enhancing the efficiency and performance of your conveyor."
+            "Compact and Efficient Design": "The square cross-sectional design ensures optimal space utilization while providing robust and stable performance.",
+            "Powerful Performance": "With a power output ranging from 32 to 105 Watts, this motor offers a perfect balance of performance and energy efficiency.",
+            "Consistent Operation": "Operating at a consistent 4000 RPM, it ensures a smooth and reliable performance across various tasks.",
+            "Inbuilt Hall Sensors": "The inclusion of inbuilt hall sensors enhances precision and control, allowing for seamless integration into applications that demand accurate speed and position sensing."
         },
         technicalDetails: [
             {
                 table: {
-                    Diameter: "80mm",
-                    Power: "125.6 W",
-                    Type: "BLDC-IR",
-                    "Operating Voltage (VDC)": "24-36",
-                    "Rated Torque": [
-                        "1.2 NM",
-                        "4.8 NM",
-                        "19.2 NM"
+                    SrNo: [1, 2, 3, 4],
+                    Model: [
+                        "RD-KJ-BLDC-IR-42-24-0.06-S01-4000-IP",
+                        "RD-KJ-BLDC-IR-42-24-0.125-S02-4000-IP",
+                        "RD-KJ-BLDC-IR-42-24-0.185-S03-4000-IP",
+                        "RD-KJ-BLDC-IR-42-24-0.25-S04-4000-IP"
                     ],
-                    "Speed": [
-                        "1000 rpm",
-                        "250 rpm",
-                        "63 rpm"
-                    ]
+                    Power_W: [32, 62, 77, 105],
+                    RatedTorque_Nm: [0.06, 0.125, 0.185, 0.25],
+                    Speed_RPM: [6300, 6300, 6300, 6300],
+                    CrossSection_C_S: [42, 42, 42, 42],
+                    Type: ["BLDC-IR", "BLDC-IR", "BLDC-IR", "BLDC-IR"],
+                    OperatingVoltage_VDC: [24, 24, 24, 24],
+                    L2: [41, 61, 81, 100]
                 }
             }
         ]
     },
     {
-        name: '76 mm MDR',
-        description: "Introducing our Motor Driven Roller (MDR), a robust and versatile solution designed to elevate your material handling processes. With a substantial 76mm diameter, a dynamic speed range of 15-240 meters per minute, torque ranging from 1.2-19.2 Nm, and available in widths from 300mm to 1000mm, our MDR is engineered to meet the diverse demands of modern industries.",
+        name: 'IRR42',
+        description: "Introducing our high-efficiency BLDC Motor, meticulously engineered to meet the demands of diverse applications. With a power range from 32 to 76 Watts, this motor strikes the perfect balance between performance and energy conservation. Operating at a consistent 4000 RPM, it ensures a smooth and reliable operation across a spectrum of tasks. A standout feature of our BLDC Motor is the incorporation of an inbuilt hall sensor. This advanced sensor technology provides precise feedback, enabling accurate speed control and position sensing. The inbuilt hall sensor enhances the motor's reliability, making it an optimal choice for applications that require precision and responsiveness. Whether you're integrating it into robotics, automation systems, or other projects, our BLDC Motor guarantees a seamless and efficient performance. Experience the power of cutting-edge motor technology with our reliable and feature-packed solution.",
         KeyFeatures: {
-            "Dynamic 76mm Diameter": "The heart of our MDR is its powerful 76mm diameter, providing the perfect balance of strength and precision for a wide range of material handling applications.",
-            "Impressive Speed Range": "Adapt to varying operational needs with a speed range of 15-240 meters per minute. From meticulous handling at lower speeds to rapid movement for high-volume tasks, our MDR ensures optimal performance.",
-            "Drive Options": "Poly V groove, Crowned - For Belt conveyor, V-Groove, Sprocket",
-            "Robust Construction": "Crafted from high-quality materials, our MDR is built for durability and reliability, ensuring a long operational life with minimal downtime.",
-            "Easy Integration": "Our MDR is designed for easy integration into existing systems, allowing you to upgrade your material handling capabilities without significant disruption."
+            "High-Efficiency Design": "Meticulously engineered for high efficiency, striking a perfect balance between performance and energy conservation.",
+            "Power Range (32-76 Watts)": "Offers a versatile power range suitable for various applications, ensuring optimal performance.",
+            "Consistent Operation at 4000 RPM": "Operates at a consistent 4000 RPM, providing smooth and reliable operation across a spectrum of tasks.",
+            "Inbuilt Hall Sensor": "Incorporates an advanced inbuilt hall sensor for precise feedback, enabling accurate speed control and position sensing."
         },
         technicalDetails: [
             {
                 table: {
-                    Diameter: "76mm",
-                    Power: "125 W",
-                    Type: "BLDC-IR",
-                    "Operating Voltage (VDC)": "24-36",
-                    "Rated Torque": [
-                        "1.2 NM",
-                        "4.8 NM",
-                        "19.2 NM"
+                    SrNo: [1, 2, 3],
+                    Model: [
+                        "RD-KJ-BLDC-IR-42-24-0.08-4000-IP",
+                        "RD-KJ-BLDC-IR-42-24-0.15-4000-IP",
+                        "RD-KJ-BLDC-IR-42-24-0.18-4000-IP"
                     ],
-                    "Speed": [
-                        "1000 rpm",
-                        "250 rpm",
-                        "63 rpm"
-                    ]
+                    Power_W: [32, 62, 76],
+                    RatedTorque_Nm: [0.08, 0.15, 0.18],
+                    Speed_RPM: [6300, 6300, 6300],
+                    Diameter_mm: [42, 42, 42],
+                    Type: ["BLDC-IR", "BLDC-IR", "BLDC-IR"],
+                    OperatingVoltage_VDC: [24, 24, 24]
                 }
             }
         ]
     },
     {
-        name: '50 mm MDR',
-        description: `Introducing our state-of-the-art Motor Driven Roller (MDR), a cutting-edge solution designed to revolutionize your material handling processes. Engineered for efficiency and reliability, our MDR boasts a 50mm diameter, offering a powerful and compact solution for a variety of applications.
-        `,
+        name: 'IRR5',
+        description: "Introducing our advanced BLDC Motor, a powerful and versatile solution designed to meet the diverse needs of your projects. With a robust power range of 23 to 184 Watts and a rapid 4000 RPM, this motor ensures exceptional performance across a wide spectrum of applications. Featuring an inbuilt hall sensor, our BLDC Motor provides precise feedback for accurate speed control and position sensing. This advanced sensor technology enhances the motor's reliability, making it a standout choice for applications that demand precision and responsiveness. Operable at an efficient voltage of 36VDC, our BLDC Motor is designed for optimal energy utilization, ensuring a stable and reliable performance. Whether driving automation systems, robotics, or other dynamic projects, our motor embodies cutting-edge technology, delivering the power and precision required for your innovative endeavors.",
         KeyFeatures: {
-            "Dynamic 50mm Diameter": `The heart of our MDR lies in its compact yet powerful 50mm diameter, providing the perfect balance of strength and versatility. Navigate through your material handling tasks with ease and efficiency.
-            `,
-            " Impressive Speed Range": `Experience unmatched adaptability with a speed range of 10-160 meters per minute. From meticulous handling at lower speeds to swift movement in high-intensity operations, our MDR ensures you're always in control.`,
-            "Wide Range of Torque": "Tailor your material handling precisely to your needs with a torque range of 0.6-9.6 Nm. This customizable torque capability ensures optimal performance across a spectrum of applications, enhancing efficiency and reducing energy consumption.",
-            "Width (300-600 mm)": "Tailor the MDR to your specific requirements with the available width range of 300-600 mm, providing flexibility for a variety of material handling applications.",
-            "Drive Options": "The 50mm MDR comes with four different drive options to suit your specific conveyor needs: 1) Poly V groove, 2)Crowned - For Belt conveyor, 3) V-Groove, 4) Sprocket",
-            "Robust and Reliable": `Crafted from top-tier materials, our MDR is built to withstand the demands of industrial environments. Its robust construction guarantees durability, minimizing downtime and ensuring a reliable solution for your material handling challenges`,
-            "Compact and Easy Integration": `Our MDR's compact design allows for effortless integration into your existing systems. Upgrade your material handling capabilities without sacrificing valuable space, and enjoy the benefits of a high-performance solution tailored to your needs`,
-            "User-Friendly Maintenance": `Minimize disruptions to your workflow with our MDR's user-friendly maintenance features. Keep your operations running smoothly with hassle-free installation and routine maintenance that is designed for efficiency`
+            "Powerful and Versatile Design": "Designed to meet the diverse needs of projects with a robust power range of 23 to 184 Watts.",
+            "Rapid 4000 RPM": "Ensures exceptional performance across a wide spectrum of applications with a rapid 4000 RPM.",
+            "Inbuilt Hall Sensor": "Features an inbuilt hall sensor for precise feedback, enabling accurate speed control and position sensing.",
+            "Efficient Operating Voltage (36VDC)": "Operates at an efficient voltage of 36VDC, designed for optimal energy utilization and stable performance."
         },
         technicalDetails: [
             {
                 table: {
-                    Diameter: "50mm",
-                    Power: "60 W",
-                    Type: "BLDC-IR",
-                    "Operating Voltage (VDC)": "24/48",
-                    "Rated Torque": [
-                        "0.6 NM",
-                        "1.35 NM",
-                        "2.4 NM",
-                        "4.05 NM",
-                        "9.6 NM"
+                    SrNo: [1, 2, 3, 4, 5],
+                    Model: [
+                        "KJ-BLDC-IR-57-36-0.05-4000-IP",
+                        "KJ-BLDC-IR-57-36-0.11-4000-IP",
+                        "KJ-BLDC-IR-57-36-0.22-4000-IP",
+                        "KJ-BLDC-IR-57-36-0.33-4000-IP",
+                        "KJ-BLDC-IR-57-36-0.44-4000-IP"
                     ],
-                    "Speed": [
-                        "1000 rpm",
-                        "444 rpm",
-                        "250 rpm",
-                        "148 rpm",
-                        "63 rpm"
-                    ]
+                    Power_W: [23, 46, 92, 138, 184],
+                    RatedTorque_Nm: [0.05, 0.11, 0.22, 0.33, 0.44],
+                    Speed_RPM: [6000, 6000, 6000, 6000, 6000],
+                    CrossSection_C_S: [57, 57, 57, 57, 57],
+                    Type: ["BLDC-IR", "BLDC-IR", "BLDC-IR", "BLDC-IR", "BLDC-IR"],
+                    OperatingVoltage_VDC: [36, 36, 36, 36, 36],
+                    L2: [37, 47, 67, 87, 107]
                 }
             }
         ]
     },
+    {
+        name: 'IRR80',
+        description: "Introducing our high-performance BLDC Motor, a robust solution engineered to excel in a variety of applications. With a substantial power range of 110 to 440 Watts and a rapid 3000 RPM, this motor delivers formidable power and speed for demanding tasks. Equipped with an inbuilt hall sensor, our BLDC Motor ensures precise speed control and accurate position sensing. The advanced hall sensor technology enhances the motor's reliability, making it an optimal choice for applications that require precision and responsiveness. Operating at an efficient voltage of 48VDC, our BLDC Motor is designed for optimal energy utilization, guaranteeing a stable and powerful performance. Whether propelling robotics, driving automation systems, or powering other dynamic projects, our motor embodies cutting-edge technology, providing the power and precision necessary for your innovative endeavors.",
+        KeyFeatures: {
+            "Robust and High-Performance Design": "Engineered to excel in a variety of applications with a substantial power range of 110 to 440 Watts.",
+            "Rapid 3000 RPM": "Delivers formidable power and speed for demanding tasks with a rapid 3000 RPM.",
+            "Inbuilt Hall Sensor": "Equipped with an inbuilt hall sensor for precise speed control and accurate position sensing.",
+            "Efficient Operating Voltage (48VDC)": "Operates at an efficient voltage of 48VDC, designed for optimal energy utilization and stable, powerful performance."
+        },
+        technicalDetails: [
+            {
+                table: {
+                    SrNo: [1, 2, 3, 4],
+                    Model: [
+                        "KJ-BLDC-IR-80-48-0.35-3000-IP",
+                        "KJ-BLDC-IR-80-48-0.7-3000-IP",
+                        "KJ-BLDC-IR-80-48-1-3000-IP",
+                        "KJ-BLDC-IR-80-48-1.4-3000-IP"
+                    ],
+                    Power_W: [110, 220, 330, 440],
+                    RatedTorque_Nm: [0.35, 0.7, 1, 1.4],
+                    Speed_RPM: [3000, 3000, 3000, 3000],
+                    CrossSection_C_S: [80, 80, 80, 80],
+                    Type: ["BLDC-IR", "BLDC-IR", "BLDC-IR", "BLDC-IR"],
+                    OperatingVoltage_VDC: [48, 48, 48, 48]
+                }
+            }
+        ]
+    }
+
 ]
 
-export default MDR_types;
+export default BlessMotor_types;

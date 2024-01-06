@@ -1,4 +1,5 @@
 import './Footer.scss'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -29,10 +30,20 @@ const Footer = () => {
         <p>All Rights Reserved © | {year} RollNDrive</p>
 
         <div className="policies">
-          <h6>Refund Policy</h6>
-          <h6>Terms of service</h6>
-          <h6>Shipping policy</h6>
-          <h6>Warranty</h6>
+          <Link to="/refund-policy">
+            <h6>Refund Policy</h6>
+          </Link>
+
+          <Link to="/terms-of-service">
+            <h6>Terms of service</h6>
+          </Link>
+          <Link to="/shipping-policy">
+            <h6>Shipping policy</h6>
+          </Link>
+
+          <Link to="/warranty-policy">
+            <h6>Warranty</h6>
+          </Link>
         </div>
       </div>
     </div>

@@ -59,12 +59,6 @@ html {
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
 }
-
-section {
-    width: 100vw !important;
-    height: 100vh !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: pink;
+a{
+    text-decoration: none;
 }

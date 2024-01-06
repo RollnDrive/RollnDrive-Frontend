@@ -61,9 +61,9 @@ const MyNavbar = () => {
                             <span style={{ padding: 8 }}>Geared Motor</span>
                         </NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="/products:gearboxes">
+                        <NavDropdown.Item href="/products:customized-geared-motors">
                             <img width={35} height={35} src={motor} alt="prod" />
-                            <span style={{ padding: 8 }}>Gear Boxes</span>
+                            <span style={{ padding: 8 }}>Customized geared Motors</span>
                         </NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="/products:motorcontroller">
@@ -71,7 +71,7 @@ const MyNavbar = () => {
                             <span style={{ padding: 8 }}>Motor Controller</span>
                         </NavDropdown.Item>
                     </NavDropdown>
-                    
+
                     <NavDropdown
                         title="Support"
                         id="support-dropdown"
@@ -80,8 +80,6 @@ const MyNavbar = () => {
                         onMouseLeave={hideDropdown2}
                     >
                         <NavDropdown.Item href="/support:validate"><i className="icons fa-regular fa-square-check"></i> Validate Your Product</NavDropdown.Item>
-                        {/* <NavDropdown.Divider /> */}
-                        {/* <NavDropdown.Item href="/support:specs"><i className="icons fa-solid fa-gears"></i> Get Product Specs</NavDropdown.Item> */}
                     </NavDropdown>
                     <Nav.Link href="/about">About</Nav.Link>
                     <Nav.Link href="/contact">Contact</Nav.Link>

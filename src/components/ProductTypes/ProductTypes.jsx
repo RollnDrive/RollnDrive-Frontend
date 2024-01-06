@@ -51,25 +51,31 @@ const ProductTypes = ({ productTypes }) => {
                 </div>
 
                 <div className="technical-details">
-                    <h3 style={{
-                        color: "var(--text-color-ink)", fontSize: "25px",
-                        "marginBottom": "12px"
-                    }}>Technical Details:</h3>
-                    <table>
-                        <tbody>
-                            {Object.entries(
-                                productTypes[selectedProductIndex].technicalDetails[0].table
-                            ).map(([prop, val], i) => (
-                                <tr key={i}>
-                                    <th>{prop}</th>
-                                    <td>
-                                        {Array.isArray(val) ? val.join(", ") : val}
-                                    </td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
+                    {productTypes[selectedProductIndex]?.technicalDetails?.[0]?.table && (
+                        <>
+                            <h3 style={{
+                                color: "var(--text-color-ink)", fontSize: "25px",
+                                "marginBottom": "12px"
+                            }}>Technical Details:</h3>
+                            <table>
+                                <tbody>
+                                    {Object.entries(
+                                        productTypes[selectedProductIndex].technicalDetails[0].table
+                                    ).map(([prop, val], i) => (
+                                        <tr key={i}>
+                                            <th>{prop}</th>
+                                            <td>
+                                                {Array.isArray(val) ? val.join(", ") : val}
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </>
+                    )}
                 </div>
+
+
             </div>
         </div>
     );

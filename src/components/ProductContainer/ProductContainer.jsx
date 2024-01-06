@@ -38,17 +38,27 @@ const RequestDrawingsForm = ({ handleCloseRequestForm }) => {
             .then(response => response.json())
             .then(data => {
                 toast.success(`${data.message}`, {
-                    // ... (toast settings)
+                    position: "top-center",
+                    autoClose: 8000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    progress: undefined,
+                    theme: "light",
                 });
                 handleCloseRequestForm();
             })
             .catch(error => {
                 toast.error(`${error.message}`, {
-                    // ... (toast settings)
+                    position: "top-center",
+                    autoClose: 8000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    progress: undefined,
+                    theme: "light",
                 });
             })
             .finally(() => {
-                setLoading(false); // Set loading state to false when the API call is complete.
+                setLoading(false);
             });
     };
 
@@ -189,7 +199,7 @@ const ProductContainer = ({ productData, productTypes }) => {
                 <h3>Features:</h3>
                 <ul>
                     {Object.entries(product.Features[0]).map(([feature, description], index) => (
-                        <li key={index}>
+                        <li  key={index}>
                             <strong>{feature}:</strong> {description}
                         </li>
                     ))}

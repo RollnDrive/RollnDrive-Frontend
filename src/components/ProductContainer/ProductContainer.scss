@@ -119,12 +119,13 @@
 
             li {
                 display: inline-block;
-                margin-right: 8px;
                 padding: 6px 12px;
                 color: var(--text-color-ink) !important;
                 border: 1px solid #121316;
                 border-radius: 10px;
                 background-color: #1213160c;
+                margin: 5px;
+                margin-left: 0;
 
                 strong {
                     font-weight: bold;

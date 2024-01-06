@@ -80,7 +80,7 @@ const Home = () => {
             <div className="row">
               <div className="col">
                 <div className="card">
-                  <h2>Gearboxes</h2>
+                  <h2>Customised Motors</h2>
                   <p className="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
                   <div className="item-image">
                     <img src={gearbox} alt="item" />
