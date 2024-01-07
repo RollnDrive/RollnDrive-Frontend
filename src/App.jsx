@@ -4,7 +4,6 @@ import MDR from "./pages/Products/MDR/MDR";
 import BrushlessMotor from "./pages/Products/BrushlessMotor/BrushlessMotor";
 import GearedMotor from "./pages/Products/GearedMotor/GearedMotor";
 import MotorController from "./pages/Products/MotorController/MotorController";
-import About from "./pages/About/About";
 import Team from "./pages/Team/Team";
 import Contact from "./pages/Contact/Contact";
 import Validate from "./pages/Support/Validate/Validate";
@@ -28,7 +27,6 @@ export default function App() {
           <Route path="/products:motorcontroller" element={<MotorController />} />
           <Route path="/support:validate" element={<Validate />} />
           <Route path="/support:specs" element={<GetSpecs />} />
-          <Route path="/about" element={<About />} />
           <Route path="/teams" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
 

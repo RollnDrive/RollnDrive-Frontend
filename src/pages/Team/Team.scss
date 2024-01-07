@@ -1,43 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap');
 
 .team-section {
-    background: transparent;
-    flex-direction: column;
-    padding: 100px 0px;
     background: var(--main-bg-color-dark);
     color: white;
+    padding: 5% 2%;
     box-sizing: border-box;
+    margin-top: 80px;
 
     .team-title {
         font-family: 'Inter';
         font-weight: 600;
-        font-size: 100px;
+        font-size: 4rem;
         color: rgba(191, 191, 191, 0.61);
         text-align: center;
+        margin-bottom: 2rem;
+
+        @media (max-width: 768px) {
+            font-size: 3rem;
+        }
     }
 
     .members {
         display: flex;
-        flex-direction: row;
-        width: 100vw;
+        flex-wrap: wrap;
         justify-content: space-evenly;
+        margin: 0 -1rem; // Adding negative margin to create spacing between cards
+        padding: 30px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     .team-intro {
         width: 100%;
         text-align: center;
-        margin-bottom: 50px;
-        font-size: 20px;
-        line-height: 30px;
-        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
 
         .quote {
-            font-size: 30px;
+            font-size: 2rem;
             font-weight: 700;
-            line-height: 10px;
+            line-height: 1;
             font-family: 'BIZ UDPGothic', sans-serif;
-            text-align: center;
-            width: 50%;
+            width: 100%;
+
+            @media (max-width: 768px) {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 1rem;
         }
     }
 }
