@@ -9,60 +9,37 @@ const RefundPolicy = () => {
                 <h1 style={styles.title}>Refund Policy</h1>
 
                 <section style={styles.section}>
-                    <h2 style={styles.subtitle}>1. Refund Eligibility</h2>
+                    <h2 style={styles.subtitle}>1. No Refunds</h2>
                     <p style={styles.paragraph}>
-                        We want you to be fully satisfied with your purchase. If you are not satisfied, we are here to help.
-                    </p>
-                    <p style={styles.paragraph}>
-                        To be eligible for a refund, please ensure the following conditions are met:
-                    </p>
-                    <ul style={styles.list}>
-                        <li>The item must be unused and in the same condition as received.</li>
-                        <li>The item must be in the original packaging.</li>
-                        <li>Proof of purchase is required.</li>
-                        <li>Refund requests must be made within 30 days of the purchase date.</li>
-                    </ul>
-                </section>
-
-                <section style={styles.section}>
-                    <h2 style={styles.subtitle}>2. Refund Process</h2>
-                    <p style={styles.paragraph}>
-                        Follow these steps to initiate the refund process:
-                    </p>
-                    <ol style={styles.list}>
-                        <li>Contact our customer support team within 30 days of your purchase.</li>
-                        <li>Provide your order number and a detailed explanation of the reason for the refund.</li>
-                        <li>Our team will guide you through the return process if applicable.</li>
-                        <li>Once your return is received and inspected, we will notify you of the approval or rejection of your refund.</li>
-                        <li>If approved, your refund will be processed, and a credit will be automatically applied to your original method of payment within a certain number of days.</li>
-                    </ol>
-                </section>
-
-                <section style={styles.section}>
-                    <h2 style={styles.subtitle}>3. Non-Refundable Items</h2>
-                    <p style={styles.paragraph}>
-                        Certain items are non-refundable, including gift cards, downloadable software products, and personalized or customized items.
+                        RollnDrive does not offer refunds on any purchases. All sales are final. Please ensure that you carefully review your order before completing the purchase. If you have any questions or concerns about a product, please contact our customer support team at [Contact Information] before placing an order.
                     </p>
                 </section>
 
                 <section style={styles.section}>
-                    <h2 style={styles.subtitle}>4. Cancellation Policy</h2>
+                    <h2 style={styles.subtitle}>2. Damaged or Defective Products</h2>
                     <p style={styles.paragraph}>
-                        You may cancel your order within 24 hours of purchase for a full refund. Cancellation requests made after 24 hours will be subject to our standard refund policy.
+                        In the rare event that you receive a damaged or defective product, please contact our customer support team within [number of days, e.g., 7 days] of receiving your order. We will work with you to address the issue and, if necessary, provide a replacement or alternative resolution.
                     </p>
                 </section>
 
                 <section style={styles.section}>
-                    <h2 style={styles.subtitle}>5. Damaged or Defective Items</h2>
+                    <h2 style={styles.subtitle}>3. Product Descriptions</h2>
                     <p style={styles.paragraph}>
-                        If you receive a damaged or defective item, please contact our customer support team immediately for assistance.
+                        While we strive to provide accurate and up-to-date product information on our website, RollnDrive does not warrant that product descriptions or other content on the site are error-free. If you believe that a product you received does not match its description on our website, please contact our customer support team, and we will assist you in resolving the issue.
                     </p>
                 </section>
 
                 <section style={styles.section}>
-                    <h2 style={styles.subtitle}>6. Contact Us</h2>
+                    <h2 style={styles.subtitle}>4. Cancellation of Orders</h2>
                     <p style={styles.paragraph}>
-                        If you have any questions about our Refund Policy, please contact us at support@rollndrive.com.
+                        Once an order is placed and confirmed, it cannot be canceled or modified. Please review your order carefully before completing the purchase.
+                    </p>
+                </section>
+
+                <section style={styles.section}>
+                    <h2 style={styles.subtitle}>5. Contact Us</h2>
+                    <p style={styles.paragraph}>
+                        If you have any questions or concerns regarding our Refund Policy, please contact our customer support team.
                     </p>
                 </section>
             </div>
@@ -74,7 +51,8 @@ const RefundPolicy = () => {
 const styles = {
     container: {
         maxWidth: "800px",
-        margin: "80px auto",
+        margin: "90px auto",
+        marginBottom: 0,
         padding: "20px",
         boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
         borderRadius: "8px",
@@ -107,4 +85,3 @@ const styles = {
 };
 
 export default RefundPolicy;
-
