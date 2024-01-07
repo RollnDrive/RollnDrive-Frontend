@@ -1,6 +1,6 @@
 const CustomizedMotors_data = [
     {
-        image: "../../assets/products/MDR_hero.png",
+        image: "https://i.ibb.co/rbrVbQN/Customised-Geared-Motors-wire.jpg",
         title: 'Brush Less Motor',
         description: `Our customized geared motors are meticulously crafted to deliver optimal efficiency, reliability, and durability in diverse applications. Whether you need a solution for robotics, automation, industrial machinery, or any specialized application, we have the expertise to design and manufacture geared motors that align perfectly with your needs.`,
         types: ['Planetary Spur Gearbox', 'Dual Shaft Geared Motor', 'Other Customised Solutions'],

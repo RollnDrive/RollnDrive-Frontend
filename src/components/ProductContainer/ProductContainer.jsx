@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 // ProductContainer.jsx
 import "./ProductContainer.scss";
-import mdrImage from "../../assets/products/MDR_hero.png"
 import ProductTypes from "../ProductTypes/ProductTypes";
 import partTable from "../../assets/products/MDR_Part-Number.png"
 import { useState } from "react";
@@ -168,7 +167,7 @@ const ProductContainer = ({ productData, productTypes }) => {
         <div className="product-container">
             <div className="product-top">
                 <div className="product-image">
-                    <img src={mdrImage} alt={product.title} />
+                    <img src={product.image} alt={product.title} />
                 </div>
                 <div className="product-details">
                     <h2>{product.title}</h2>

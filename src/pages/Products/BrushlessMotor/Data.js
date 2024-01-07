@@ -1,6 +1,6 @@
 const BLessMotors_data = [
     {
-        image: "../../assets/products/MDR_hero.png",
+        image: "https://i.ibb.co/Y2VL9Zy/Brushless-Motors-wire.png",
         title: 'Brush Less Motor',
         description: `Discover the future of electric motors with Brushless DC (BLDC) technology. These innovative motors are revolutionizing various industries, offering improved efficiency, reliability, and performance compared to traditional brushed motors. Let's dive into the key features and benefits that make brushless DC motors a game-changer.
         `,

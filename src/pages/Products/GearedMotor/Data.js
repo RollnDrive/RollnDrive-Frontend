@@ -1,6 +1,6 @@
 const Geared_Motor_data = [
     {
-        image: "../../assets/products/MDR_hero.png",
+        image: "https://i.ibb.co/2MdJv0C/Brushless-Geared-Motors-w-IRE.png",
         title: 'Brush Less Geared Motors',
         description: `Discover the future of motor technology with brushless planetary geared motors. Engineered for precision and efficiency, these motors combine the reliability of brushless technology with the power of planetary gears, offering a winning solution for a wide range of applications.
         `,

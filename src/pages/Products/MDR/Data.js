@@ -1,6 +1,6 @@
 const MDR_data = [
     {
-        image: "../../assets/products/MDR_hero.png",
+        image: "https://i.ibb.co/fY6Ppmx/Motor-Driven-Roller.png",
         title: 'Motor Driven Roller',
         description: `A Motor Driven Roller ( MDR ) is a type of conveyor roller that incorporates an integrated brushless dc motor within the roller body. This design eliminates the need for a separate external drive unit , making it a compact and efficient solution for various material handling and conveyor system applications . Motor driven rollers are commonly used in industries such as manufacturing, distribution and logistics`,
         types: ['MDR 50mm', 'MDR 76mm', 'MDR 80mm'],

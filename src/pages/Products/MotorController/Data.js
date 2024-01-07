@@ -1,6 +1,6 @@
 const Controller_data = [
     {
-        image: "../../assets/products/MDR_hero.png",
+        image: "https://i.ibb.co/h8dyNF8/BLD-300-B-BLDC-driver.png",
         title: `Motor Controller`,
         description: `Introducing our Brushless Motor Controller, a cutting-edge solution that enhances the efficiency and control of brushless motors in various applications. This compact and intelligent controller is designed to optimize motor performance, providing a seamless and reliable operation.`,
         types: ['RDBLD120', 'RDBLD300'],
