@@ -1,6 +1,5 @@
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import './MyNavbar.scss';
-import motor from "../../assets/products/motor.webp"
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -82,7 +81,7 @@ const MyNavbar = () => {
                         <NavDropdown.Item href="/support:validate"><i className="icons fa-regular fa-square-check"></i> Validate Your Product</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="/teams">About</Nav.Link>
-                    <Nav.Link href="/contact">Contact</Nav.Link>
+                    {/* <Nav.Link href="/contact">Contact</Nav.Link> */}
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

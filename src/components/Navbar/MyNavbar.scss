@@ -1,5 +1,5 @@
 .navbar {
-    padding: 10px 30px !important;
+    padding: 10px 80px !important;
     font-weight: 600 !important;
     border-bottom: 1px solid #D3D7D9;
     width: 100%;
@@ -36,4 +36,10 @@
 .icons {
     color: var(--text-color-ink) !important;
     padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px !important;
+    }
 }
