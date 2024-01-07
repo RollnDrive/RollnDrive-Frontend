@@ -47,27 +47,27 @@ const MyNavbar = () => {
                         title="Products"
                     >
                         <NavDropdown.Item href="/products:mdr">
-                            <img width={35} height={35} src={motor} alt="prod" />
+                            <img width={35} height={35} src={"https://i.ibb.co/fY6Ppmx/Motor-Driven-Roller.png"} alt="prod" />
                             <span style={{ padding: 8 }}>MDR</span>
                         </NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="/products:brushlessmotor">
-                            <img width={35} height={35} src={motor} alt="prod" />
+                            <img width={35} height={35} src={"https://i.ibb.co/Y2VL9Zy/Brushless-Motors-wire.png"} alt="prod" />
                             <span style={{ padding: 8 }}>Brush-less Motor</span>
                         </NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="/products:gearedmotor">
-                            <img width={35} height={35} src={motor} alt="prod" />
+                            <img width={35} height={35} src={"https://i.ibb.co/2MdJv0C/Brushless-Geared-Motors-w-IRE.png"} alt="prod" />
                             <span style={{ padding: 8 }}>Geared Motor</span>
                         </NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="/products:customized-geared-motors">
-                            <img width={35} height={35} src={motor} alt="prod" />
+                            <img width={35} height={35} src={"https://i.ibb.co/rbrVbQN/Customised-Geared-Motors-wire.jpg"} alt="prod" />
                             <span style={{ padding: 8 }}>Customized geared Motors</span>
                         </NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="/products:motorcontroller">
-                            <img width={35} height={35} src={motor} alt="prod" />
+                            <img width={35} height={35} src={"https://i.ibb.co/h8dyNF8/BLD-300-B-BLDC-driver.png"} alt="prod" />
                             <span style={{ padding: 8 }}>Motor Controller</span>
                         </NavDropdown.Item>
                     </NavDropdown>

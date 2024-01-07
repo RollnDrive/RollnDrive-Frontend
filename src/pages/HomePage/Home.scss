@@ -156,10 +156,12 @@
                         background: #eaecee;
                         margin-top: 0px;
                         border-radius: 16px;
+                        overflow: hidden;
 
                         img {
-                            width: 80%;
+                            width: 100%;
                             height: 100%;
+                            object-fit: cover;
                         }
                     }
 
@@ -208,8 +210,8 @@
                             border-radius: 16px;
 
                             img {
-                                width: 80%;
-                                height: 90%;
+                                width: 100%;
+                                height: 100%;
                             }
                         }
 

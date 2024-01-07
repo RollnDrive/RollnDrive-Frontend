@@ -1,10 +1,5 @@
 import './Home.scss';
 import MyNavbar from '../../components/Navbar/MyNavbar';
-import mdr from "../../assets/products/conveyor.png"
-import brushless from "../../assets/products/brushless.png"
-import controller from "../../assets/products/controller.png"
-import gearbox from "../../assets/products/gearbox.png"
-import geared from "../../assets/products/geared.png"
 import { Link } from 'react-router-dom';
 import video from "../../assets/video/video.mp4"
 import Footer from '../../components/Footer/Footer';
@@ -36,7 +31,7 @@ const Home = () => {
                 <h2>Motor Driven Roller</h2>
                 <p className="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
                 <div className="item-image">
-                  <img src={mdr} alt="item" />
+                  <img src={"https://i.ibb.co/Z6v1Bpy/80mm-MDR-Photo-Room-png-Photo-Room.png"} alt="item" />
                 </div>
                 <Link to={"/products:mdr"}><button>Info</button></Link>
               </div>
@@ -48,7 +43,7 @@ const Home = () => {
                   <h2>Brushless Motor</h2>
                   <p className="product-info-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta expedita ducimus minus aut!</p>
                   <div className="item-image">
-                    <img src={brushless} alt="item" />
+                    <img src={"https://i.ibb.co/sb5P5tr/Brushless-Motors-wire-Photo-Room-png-Photo-Room.png"} alt="item" />
                   </div>
                   <button>Info</button>
                 </div>
@@ -59,7 +54,7 @@ const Home = () => {
                   <h2>Geared Motors</h2>
                   <p className="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
                   <div className="item-image">
-                    <img src={geared} alt="item" />
+                    <img src={"https://i.ibb.co/2MdJv0C/Brushless-Geared-Motors-w-IRE.png"} alt="item" />
                   </div>
                   <button>Info</button>
                 </div>
@@ -72,7 +67,7 @@ const Home = () => {
                   <h2>Customised Motors</h2>
                   <p className="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
                   <div className="item-image">
-                    <img src={gearbox} alt="item" />
+                    <img src={"https://i.ibb.co/rbrVbQN/Customised-Geared-Motors-wire.jpg"} alt="item" />
                   </div>
                   <button>Info</button>
                 </div>
@@ -82,7 +77,7 @@ const Home = () => {
                   <h2>Motor Controller</h2>
                   <p className="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
                   <div className="item-image">
-                    <img src={controller} alt="item" />
+                    <img src={"https://i.ibb.co/h8dyNF8/BLD-300-B-BLDC-driver.png"} alt="item" />
                   </div>
                   <button>Info</button>
                 </div>

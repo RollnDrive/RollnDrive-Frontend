@@ -8,26 +8,7 @@ const MDR_types = [
             "Width (300-1000mm)": "Customize the MDR to your specific conveyor requirements with a flexible width range of 300-1000mm, offering adaptability for different material handling scenarios.",
             "Drive Options - Crowned for Belt Conveyor": "Tailored specifically for belt drive systems, our MDR with crowned rollers ensures optimal traction and alignment, enhancing the efficiency and performance of your conveyor."
         },
-        technicalDetails: [
-            {
-                table: {
-                    Diameter: "80mm",
-                    Power: "125.6 W",
-                    Type: "BLDC-IR",
-                    "Operating Voltage (VDC)": "24-36",
-                    "Rated Torque": [
-                        "1.2 NM",
-                        "4.8 NM",
-                        "19.2 NM"
-                    ],
-                    "Speed": [
-                        "1000 rpm",
-                        "250 rpm",
-                        "63 rpm"
-                    ]
-                }
-            }
-        ]
+        tech_image: "https://i.ibb.co/pXNbRCn/80mm-MDR.png"
     },
     {
         name: '76 mm MDR',
@@ -39,26 +20,7 @@ const MDR_types = [
             "Robust Construction": "Crafted from high-quality materials, our MDR is built for durability and reliability, ensuring a long operational life with minimal downtime.",
             "Easy Integration": "Our MDR is designed for easy integration into existing systems, allowing you to upgrade your material handling capabilities without significant disruption."
         },
-        technicalDetails: [
-            {
-                table: {
-                    Diameter: "76mm",
-                    Power: "125 W",
-                    Type: "BLDC-IR",
-                    "Operating Voltage (VDC)": "24-36",
-                    "Rated Torque": [
-                        "1.2 NM",
-                        "4.8 NM",
-                        "19.2 NM"
-                    ],
-                    "Speed": [
-                        "1000 rpm",
-                        "250 rpm",
-                        "63 rpm"
-                    ]
-                }
-            }
-        ]
+        tech_image: "https://i.ibb.co/n8DtwwP/76-mm-MDR.png"
     },
     {
         name: '50 mm MDR',
@@ -75,30 +37,7 @@ const MDR_types = [
             "Compact and Easy Integration": `Our MDR's compact design allows for effortless integration into your existing systems. Upgrade your material handling capabilities without sacrificing valuable space, and enjoy the benefits of a high-performance solution tailored to your needs`,
             "User-Friendly Maintenance": `Minimize disruptions to your workflow with our MDR's user-friendly maintenance features. Keep your operations running smoothly with hassle-free installation and routine maintenance that is designed for efficiency`
         },
-        technicalDetails: [
-            {
-                table: {
-                    Diameter: "50mm",
-                    Power: "60 W",
-                    Type: "BLDC-IR",
-                    "Operating Voltage (VDC)": "24/48",
-                    "Rated Torque": [
-                        "0.6 NM",
-                        "1.35 NM",
-                        "2.4 NM",
-                        "4.05 NM",
-                        "9.6 NM"
-                    ],
-                    "Speed": [
-                        "1000 rpm",
-                        "444 rpm",
-                        "250 rpm",
-                        "148 rpm",
-                        "63 rpm"
-                    ]
-                }
-            }
-        ]
+        tech_image: "https://i.ibb.co/C6DYCcn/50mm-MDR.png"
     },
 ]
 

@@ -2,6 +2,7 @@ const CustomizedMotor_types = [
     {
         name: 'Planetary Spur Gearbox',
         description: "Introducing our Planetary with Spur Gearbox, a sophisticated and efficient solution designed to enhance the performance of your applications. This gearbox combines the precision of planetary gears with the simplicity and durability of spur gears, offering a versatile and reliable solution for various industries.",
+        image: "https://i.ibb.co/9pSwZ7L/Planetary-Spur-Gearbox-wire.png",
         KeyFeatures: {
             "Hybrid Gear Design": "Our gearbox seamlessly integrates planetary gears and spur gears, combining the benefits of high torque transmission from planetary gears with the robustness and simplicity of spur gears.",
             "Enhanced Torque": "The planetary gears provide a high torque output, making this gearbox suitable for applications requiring increased power and efficiency.",
@@ -15,6 +16,7 @@ const CustomizedMotor_types = [
     {
         name: 'Dual Shaft Geared Motor',
         description: "Introducing our Dual Shaft Geared Motor, a versatile and powerful solution designed to meet the diverse needs of your applications. This motor features dual output shafts, providing enhanced flexibility for various industrial and automation scenarios.",
+        image: "https://i.ibb.co/72gYQDk/DUAL-SHAFT-GEARBOX-WIRE.png",
         KeyFeatures: {
             "Dual Shaft Design": "The motor is equipped with two output shafts, allowing for simultaneous operation of multiple components or systems, increasing the adaptability of your machinery.",
             "High Torque": "Our Dual Shaft Geared Motor delivers high torque, making it suitable for applications requiring robust power transmission and efficient performance.",

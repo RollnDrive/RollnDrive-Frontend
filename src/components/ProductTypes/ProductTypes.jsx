@@ -30,6 +30,10 @@ const ProductTypes = ({ productTypes }) => {
                     color: "var(--text-color-ink)", fontSize: "25px",
                     "marginBottom": "12px"
                 }}>{productTypes[selectedProductIndex].name}</h2>
+
+                {
+                    productTypes[selectedProductIndex].image ? <img className="type-image" src={productTypes[selectedProductIndex].image} alt="img" /> : <></>
+                }
                 <p>{productTypes[selectedProductIndex].description}</p>
 
                 <div className="key-features">
@@ -51,28 +55,22 @@ const ProductTypes = ({ productTypes }) => {
                 </div>
 
                 <div className="technical-details">
-                    {productTypes[selectedProductIndex]?.technicalDetails?.[0]?.table && (
-                        <>
-                            <h3 style={{
-                                color: "var(--text-color-ink)", fontSize: "25px",
-                                "marginBottom": "12px"
-                            }}>Technical Details:</h3>
-                            <table>
-                                <tbody>
-                                    {Object.entries(
-                                        productTypes[selectedProductIndex].technicalDetails[0].table
-                                    ).map(([prop, val], i) => (
-                                        <tr key={i}>
-                                            <th>{prop}</th>
-                                            <td>
-                                                {Array.isArray(val) ? val.join(", ") : val}
-                                            </td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </>
-                    )}
+
+                    {
+                        productTypes[selectedProductIndex].tech_image ?
+                            (
+                                <>
+                                    <h3 style={{
+                                        color: "var(--text-color-ink)", fontSize: "25px",
+                                        "marginBottom": "12px"
+                                    }}>
+                                        Technical Details:
+                                    </h3>
+                                    <img className="tech-image" src={productTypes[selectedProductIndex].tech_image} alt="img" />
+                                </>
+                            ) :
+                            <></>
+                    }
                 </div>
 
 

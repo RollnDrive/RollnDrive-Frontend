@@ -2,6 +2,7 @@ const Controller_types = [
     {
         name: 'RDBLD120',
         description: "RDBLD120 is a versatile BLDC motor designed to deliver high performance and reliability for a variety of applications. With advanced features and a robust design, this motor is a perfect choice for projects demanding precision and efficiency. From its operating voltage to external potentiometer specifications, RDBLD120 offers a range of customizable options to meet your specific requirements.",
+        image: "https://i.ibb.co/4PkJd30/BLD-120-B-BLDC-driver-wire.png",
         KeyFeatures: {
             "High Efficiency": "RDBLD120 is engineered for high efficiency, ensuring optimal performance and energy utilization.",
             "Versatile Voltage Range": "With an operating voltage range of 12-30VDC, this motor provides flexibility for different power supply configurations.",
@@ -36,6 +37,7 @@ const Controller_types = [
     {
         name: 'RDBLD300',
         description: "RDBLD300 is a powerful BLDC motor designed to deliver superior performance and reliability across a range of applications. With advanced features and a durable design, this motor is ideal for projects that demand high torque, precision, and efficiency. From its wide operating voltage range to the external potentiometer compatibility, RDBLD300 offers versatile options to meet the specific needs of your application.",
+        image: "https://i.ibb.co/MN1sHkN/BLD-300-B-BLDC-driver.png",
         KeyFeatures: {
             "High Torque": "RDBLD300 is engineered for high torque applications, providing robust power transmission and efficient performance.",
             "Wide Operating Voltage Range": "With an operating voltage range of 12-56VDC, this motor accommodates different power supply configurations for increased flexibility.",
