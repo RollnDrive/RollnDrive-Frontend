@@ -28,7 +28,7 @@ const MyNavbar = () => {
 
     return (
         <Navbar bg="light" expand="lg" className="navbar d-flex justify-content-between fixed-top">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
                 <div className="navlogo-container">
                     <img className='navlogo' src="./navlogo.png" alt='logo' />
                     <span className='navlogo-txt'>RollnDrive</span>

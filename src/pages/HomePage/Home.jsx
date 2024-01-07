@@ -29,7 +29,7 @@ const Home = () => {
             <div className="row">
               <div className="mdr-card">
                 <h2>Motor Driven Roller</h2>
-                <p className="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
+                <p className="product-info-sm">A Motor Driven Roller ( MDR ) is a type of conveyor roller that incorporates an integrated brushless dc motor within the roller body. </p>
                 <div className="item-image">
                   <img src={"https://i.ibb.co/Z6v1Bpy/80mm-MDR-Photo-Room-png-Photo-Room.png"} alt="item" />
                 </div>
@@ -41,7 +41,7 @@ const Home = () => {
               <div className="col">
                 <div className="card">
                   <h2>Brushless Motor</h2>
-                  <p className="product-info-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta expedita ducimus minus aut!</p>
+                  <p className="product-info-sm">These innovative motors are revolutionizing various industries, offering improved efficiency.</p>
                   <div className="item-image">
                     <img src={"https://i.ibb.co/sb5P5tr/Brushless-Motors-wire-Photo-Room-png-Photo-Room.png"} alt="item" />
                   </div>
@@ -52,7 +52,7 @@ const Home = () => {
               <div className="col">
                 <div className="card">
                   <h2>Geared Motors</h2>
-                  <p className="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
+                  <p className="product-info-sm">Engineered for precision and efficiency, these motors combine the reliability of brushless technology.</p>
                   <div className="item-image">
                     <img src={"https://i.ibb.co/2MdJv0C/Brushless-Geared-Motors-w-IRE.png"} alt="item" />
                   </div>
@@ -65,7 +65,7 @@ const Home = () => {
               <div className="col">
                 <div className="card">
                   <h2>Customised Motors</h2>
-                  <p className="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
+                  <p className="product-info-sm">Our customized geared motors are meticulously crafted to deliver optimal efficiency, reliability.</p>
                   <div className="item-image">
                     <img src={"https://i.ibb.co/rbrVbQN/Customised-Geared-Motors-wire.jpg"} alt="item" />
                   </div>
@@ -75,7 +75,7 @@ const Home = () => {
               <div className="col">
                 <div className="card">
                   <h2>Motor Controller</h2>
-                  <p className="product-info-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id consequatur dicta debitis corporis!</p>
+                  <p className="product-info-sm">Our Brushless Motor Controller, a cutting-edge solution that enhances the efficiency.</p>
                   <div className="item-image">
                     <img src={"https://i.ibb.co/h8dyNF8/BLD-300-B-BLDC-driver.png"} alt="item" />
                   </div>
