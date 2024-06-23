@@ -45,7 +45,7 @@ const Home = () => {
                   <div className="item-image">
                     <img src={"https://i.ibb.co/sb5P5tr/Brushless-Motors-wire-Photo-Room-png-Photo-Room.png"} alt="item" />
                   </div>
-                  <button>Info</button>
+                  <Link to={"/products:brushlessmotor"}><button>Info</button></Link>
                 </div>
               </div>
 
@@ -56,7 +56,7 @@ const Home = () => {
                   <div className="item-image">
                     <img src={"https://i.ibb.co/SNnzBb2/Brushless-Geared-Motors-w-IRE.png"} alt="item" />
                   </div>
-                  <button>Info</button>
+                  <Link to={"/products:gearedmotor"}><button>Info</button></Link>
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@ const Home = () => {
                   <div className="item-image">
                     <img src={"https://i.ibb.co/t8QB6Rg/Customised-Geared-Motors-wire.png"} alt="item" />
                   </div>
-                  <button>Info</button>
+                  <Link to={"/products:customized-geared-motors"}><button>Info</button></Link>
                 </div>
               </div>
               <div className="col">
@@ -79,7 +79,7 @@ const Home = () => {
                   <div className="item-image">
                     <img src={"https://i.ibb.co/1sPFfRw/BLD-300-B-BLDC-driver.png"} alt="item" />
                   </div>
-                  <button>Info</button>
+                  <Link to={"/products:motorcontroller"}><button>Info</button></Link>
                 </div>
               </div>
             </div>
