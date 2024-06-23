@@ -10,7 +10,7 @@ const Contact = () => {
       <div className='contact-section'>
 
         <div className="form-container">
-        <form action="https://formsubmit.co/shashankbhosagi0121@gmail.com" method="POST">
+        <form action="https://formsubmit.co/vishal@rollndrive.com" method="POST">
             <div>
               <label htmlFor="name">Name</label>
               <input
