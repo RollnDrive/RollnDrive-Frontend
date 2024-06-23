@@ -41,7 +41,7 @@ const Footer = () => {
           <div className="right">
             <h2>RollnDrive</h2>
             <address>
-            PLOT PAP-128 J BLOCK MIDC,<br/> BEHIND SMITH INTERNATIONAL,<br/> Telco Road, NEAR QUALITY CIRCLE,<br/> Bhosari, Pimpri Chinchwad,<br/> Pune, Maharashtra, 411026.<br/> <b>GST no: 27BHMPC3508H1ZH</b><br/><br/>Mob no: +91 9637899174<br/>Email: <a href="mailto:vishal@rollndrive.com">vishal@rollndrive.com</a>
+            PLOT PAP-128 J BLOCK MIDC,<br/> BEHIND SMITH INTERNATIONAL,<br/> Telco Road, NEAR QUALITY CIRCLE,<br/> Bhosari, Pimpri Chinchwad,<br/> Pune, Maharashtra, 411026.<br/><br/>Mob no: +91 9637899174<br/>Email: <a href="mailto:vishal@rollndrive.com">vishal@rollndrive.com</a>
 
             </address>
           </div>
