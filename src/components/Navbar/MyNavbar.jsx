@@ -81,7 +81,7 @@ const MyNavbar = () => {
                         <NavDropdown.Item href="/support:validate"><i className="icons fa-regular fa-square-check"></i> Validate Your Product</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="/teams">About</Nav.Link>
-                    {/* <Nav.Link href="/contact">Contact</Nav.Link> */}
+                    <Nav.Link href="/contact">Contact</Nav.Link> 
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

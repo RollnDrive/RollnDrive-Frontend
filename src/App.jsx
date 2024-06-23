@@ -13,6 +13,7 @@ import RefundPolicy from "./pages/RefundPolicy/RefundPolicy";
 import TermsOfService from "./pages/TermsOfService/Terms";
 import WarrantyPolicy from "./pages/Warranty/Wrranty";
 import ShippingPolicy from "./pages/ShippingPolicy/ShippingPolicy";
+import ThankYouPage from "./pages/ThankYouPage/ThankYouPage";
 
 export default function App() {
   return (
@@ -34,6 +35,7 @@ export default function App() {
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/warranty-policy" element={<WarrantyPolicy />} />
           <Route path="/shipping-policy" element={<ShippingPolicy />} />
+          <Route path="/thank-you" element={<ThankYouPage />} />
         </Routes>
       </BrowserRouter>
     </>
