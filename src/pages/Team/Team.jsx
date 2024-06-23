@@ -21,7 +21,7 @@ const Team = () => {
           The dedicated professionals behind RollnDrive and discover what makes our team stand out.
         </p>
         <div className="members">
-          <MemberCard image={vishal} name={"Vishal Chepuri"} role={"Founder/CEO"}></MemberCard>
+          <MemberCard image={vishal} name={"Vishal Chepuri"} role={"Founder"}></MemberCard>
           <MemberCard image={shivashankar} name={"Shivashankar Khobare"} role={"Production Manager"}></MemberCard>
           <MemberCard image={tapan} name={"Tapan Patil"} role={"Technical Advisor"}></MemberCard>
           <MemberCard image={sahadev} name={"Sahadev Achwale"} role={"Store Manager"}></MemberCard>
