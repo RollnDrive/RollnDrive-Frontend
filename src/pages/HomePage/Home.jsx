@@ -54,7 +54,7 @@ const Home = () => {
                   <h2>Geared Motors</h2>
                   <p className="product-info-sm">Engineered for precision and efficiency, these motors combine the reliability of brushless technology.</p>
                   <div className="item-image">
-                    <img src={"https://i.ibb.co/2MdJv0C/Brushless-Geared-Motors-w-IRE.png"} alt="item" />
+                    <img src={"https://i.ibb.co/SNnzBb2/Brushless-Geared-Motors-w-IRE.png"} alt="item" />
                   </div>
                   <button>Info</button>
                 </div>
@@ -67,7 +67,7 @@ const Home = () => {
                   <h2>Customised Motors</h2>
                   <p className="product-info-sm">Our customized geared motors are meticulously crafted to deliver optimal efficiency, reliability.</p>
                   <div className="item-image">
-                    <img src={"https://i.ibb.co/rbrVbQN/Customised-Geared-Motors-wire.jpg"} alt="item" />
+                    <img src={"https://i.ibb.co/t8QB6Rg/Customised-Geared-Motors-wire.png"} alt="item" />
                   </div>
                   <button>Info</button>
                 </div>
@@ -77,7 +77,7 @@ const Home = () => {
                   <h2>Motor Controller</h2>
                   <p className="product-info-sm">Our Brushless Motor Controller, a cutting-edge solution that enhances the efficiency.</p>
                   <div className="item-image">
-                    <img src={"https://i.ibb.co/h8dyNF8/BLD-300-B-BLDC-driver.png"} alt="item" />
+                    <img src={"https://i.ibb.co/1sPFfRw/BLD-300-B-BLDC-driver.png"} alt="item" />
                   </div>
                   <button>Info</button>
                 </div>
