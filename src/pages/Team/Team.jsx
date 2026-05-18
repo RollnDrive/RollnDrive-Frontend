@@ -23,8 +23,8 @@ const Team = () => {
         <div className="members">
           
           <MemberCard image={vishal} name={"Vishal Chepuri"} role={"Founder"}></MemberCard>
-          <MemberCard image={shivashankar} name={"Shivashankar Khobare"} role={"Production Manager"}></MemberCard>
           <MemberCard image={tapan} name={"Tapan Patil"} role={"Co-Founder"}></MemberCard>
+          <MemberCard image={shivashankar} name={"Shivashankar Khobare"} role={"Production Manager"}></MemberCard>
           <MemberCard image={sahadev} name={"Sahadev Achwale"} role={"Store Manager"}></MemberCard>
         </div>
       </section>
