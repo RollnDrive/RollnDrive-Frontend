@@ -7,7 +7,7 @@ import vishal from "../../assets/images/1.avif"
 import shivashankar from "../../assets/images/2.avif"
 import tapan from "../../assets/images/3.avif"
 import sahadev from "../../assets/images/4.avif"
-
+import aniruddha from "../../assets/images/5.avif"
 console.log(vishal);
 
 const Team = () => {
@@ -26,6 +26,7 @@ const Team = () => {
           <MemberCard image={tapan} name={"Tapan Patil"} role={"Co-Founder"}></MemberCard>
           <MemberCard image={shivashankar} name={"Shivashankar Khobare"} role={"Production Manager"}></MemberCard>
           <MemberCard image={sahadev} name={"Sahadev Achwale"} role={"Store Manager"}></MemberCard>
+          <MemberCard image={aniruddha} name={"Aniruddha Chitte"} role={"Technical Advisor"}></MemberCard>
         </div>
       </section>
       <Footer />
